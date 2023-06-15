@@ -1,0 +1,374 @@
+:root {
+    --nav-color: #fbfbfb;
+    /* Width/Height setting */
+    --nav-container-h: 5rem;
+    --nav-subMenuContainer-w: 230px;
+    --nav-logo-mw: 115px;
+    /* Margin/Padding setting */
+    --nav-container-pd: 1.8rem 11.5rem;
+    --nav-menuItems-m: 20px 10px;
+    /* Font setting */
+    --nav-menuItems-fs: 1.15rem;
+    --nav-subMenuContainerItems-fs: 1.1rem;
+    --nav-menuItems-scale: scale(1.1) translateY(-3px) !important;
+}
+
+.nav-header {
+    /* Positioning */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Display & Box Model */
+    display: flex;
+    /* Other */
+
+}
+
+.nav-logo-name {
+    display: none;
+}
+
+.nav-container {
+    /* Display & Box Model */
+    width: 100%;
+    height: var(--nav-container-h);
+    padding: var(--nav-container-pd);
+    /* Other */
+    background-color: var(--nav-color);
+    position: relative;
+
+}
+
+.nav-row {
+    /* Display & Box Model */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.nav-logo {
+    max-width: var(--nav-logo-mw);
+    margin: 0 20px;
+}
+
+.nav-menus {
+    width: 100%;
+}
+
+.main-nav {
+    width: 100%;
+}
+
+ul.main-menu {
+    /* Display & Box Model */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+
+.menu-item a {
+    /* Positioning */
+    position: relative;
+    /* Other */
+    font-family: var(--primary-font2);
+    font-size: var(--nav-menuItems-fs);
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #000000;
+    /* Display & Box Model */
+    display: block;
+
+    white-space: nowrap;
+}
+
+.menu-item a:hover {
+    /* Display & Box Model */
+    transform: scale(1.05) translateY(-2px);
+    /* border-bottom: 3px solid #005E04; */
+}
+
+.nav-menus a[class="active"] {
+    /* Display & Box Model */
+    transform: var(--nav-menuItems-scale);
+    /* Other */
+    color: #005E04;
+    border-bottom: 3px solid #005E04 !important;
+}
+
+
+li {
+    /* Other */
+    list-style-type: none;
+}
+
+@media (max-width: 1400px) {
+    :root {
+        /* Width/Height setting */
+        --nav-container-h: 4.8rem;
+        --nav-subMenuContainer-w: 212px;
+        /* Margin/Padding setting */
+        --nav-menuItems-m: 22px 30px;
+        --nav-subMenuContainer-m: 14px 20px;
+        /* Font setting */
+
+        --nav-menuItems-fs: 1.1rem;
+        --nav-subMenuContainerItems-fs: 1.03rem;
+        --nav-menuItems-scale: scale(1.05) translateY(-3px) !important;
+    }
+
+    .menu-item a:hover {
+        /* Display & Box Model */
+        transform: scale(1.08) translateY(-2px);
+        /* border-bottom: 3px solid #005E04; */
+    }
+
+    .nav-menus a[class="active"] {
+        /* Other */
+        color: #005E04;
+        border-bottom: 3px solid #005E04 !important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    :root {
+        /* Width/Height setting */
+        --nav-container-h: 6.2rem;
+        --nav-subMenuContainer-w: 203px;
+        /* Margin/Padding setting */
+        --nav-container-pd: 10px 3.75rem;
+        --nav-logo-mw: 100px;
+        /* Font setting */
+
+        --nav-menuItems-fs: 1.1rem;
+        --nav-subMenuContainerItems-fs: 1rem;
+        --nav-menuItems-scale: scale(1.07) translateY(-2px) !important;
+    }
+
+    .menu-item a {
+        /* Other */
+        letter-spacing: 0.1px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    :root {
+        /* Width/Height setting */
+        --nav-container-h: 5.2rem;
+        --nav-subMenuContainer-w: 170px;
+        /* Margin/Padding setting */
+        --nav-menuItems-m: 18px 22px;
+        --nav-subMenuContainer-m: 8px 18px;
+        --nav-logo-mw: 85px;
+        /* Font setting */
+        --nav-menuItems-fs: 0.95rem;
+        --nav-subMenuContainerItems-fs: 0.95rem;
+    }
+
+    .menu-item a {
+        /* Other */
+        letter-spacing: 0.1px;
+    }
+
+    .nav-menus a[class="active"] {
+        border-bottom: 2px solid #005E04 !important;
+    }
+
+}
+
+
+@media (max-width: 769px) {
+    :root {
+        /* Width/Height setting */
+        --nav-container-h: 3.6rem;
+        --nav-subMenuContainer-w: 250px;
+        /* Margin/Padding setting */
+        --nav-container-pd: 1rem 3rem;
+        --nav-menuItems-m: 10px 3rem;
+        --nav-subMenuContainer-m: 10px 18px;
+        /* Font setting */
+        --nav-menuItems-fs: 1.2rem;
+        --nav-subMenuContainerItems-fs: 1.2rem;
+        --nav-menuItems-scale: scale(1.01) translateY(-1px) !important;
+    }
+
+    .nav-logo-name {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-name {
+        font-family: 'Poppins', sans-serif;
+        color: var(--primary-black);
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-logo {
+        display: none;
+    }
+
+    .nav-logo2 {
+        max-width: 80px;
+        margin-right: 15px;
+    }
+
+    /*------------Nav icons------------*/
+    .main-nav .nav-icon {
+        /* Display & Box Model */
+        display: flex !important;
+        /* Other */
+        color: #1b1b1b;
+        cursor: pointer;
+        /* Positioning */
+        position: relative;
+    }
+
+    .nav-icon .bars svg {
+        /* Other */
+        font-size: 2rem;
+    }
+
+    .nav-icon .cross svg {
+        /* Other */
+        font-size: 1.6rem;
+    }
+
+    /*------------Nav icons------------*/
+
+
+    .main-nav ul.menu-container {
+        /* Display & Box Model */
+        display: block !important;
+        /* Positioning */
+        position: absolute;
+        top: 5.6rem;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        /* Other */
+        background-color: #ffffff;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+            rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+
+    .main-nav .menu-item a {
+        /* Display & Box Model */
+        padding: 10px 0px;
+        /* Other */
+        color: #313131;
+        /* text-align: center; */
+        margin: var(--nav-menuItems-m);
+
+    }
+
+    .main-nav .menu-item:hover>a {
+        /* Other */
+        color: #005E04;
+        /* Display & Box Model */
+        transform: scale(1) translateY(-1px);
+    }
+
+    .nav-menus a[class="active"] {
+        /* Other */
+        border-bottom: 2px solid #005E04 !important;
+        color: #005E04 !important;
+        font-size: 1.25rem;
+    }
+
+    .main-nav ul.main-menu {
+        /* Display & Box Model */
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    :root {
+        /* Margin/Padding setting */
+        --nav-menuItems-m: 8px 3rem;
+        /* Font setting */
+        --nav-menuItems-fs: 1.2rem;
+    }
+
+    .nav-menus a[class="active"] {
+        /* Other */
+        border-bottom: 2px solid #005E04 !important;
+        color: #005E04 !important;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        /* Width/Height setting */
+        --nav-subMenuContainer-w: 150px;
+        /* Margin/Padding setting */
+        --nav-container-pd: 0.4rem 1.8rem;
+        --nav-menuItems-m: 7px 1.8rem;
+
+        /* Font setting */
+        --nav-menuItems-fs: 1rem;
+        --nav-subMenuContainerItems-fs: 0.875rem;
+        --nav-menuItems-scale: scale(1.01) translateY(0px) !important;
+    }
+
+    .main-nav ul.menu-container {
+        /* Display & Box Model */
+        display: block !important;
+        /* Positioning */
+        position: absolute;
+        top: 4.5rem;
+
+    }
+
+    .nav-logo2 {
+        max-width: 70px;
+        margin-right: 15px;
+    }
+
+    /*------------Nav icons------------*/
+    .nav-icon .bars svg {
+        /* Other */
+        font-size: 1.8rem;
+    }
+
+    .nav-icon .cross svg {
+        /* Other */
+        font-size: 1.4rem;
+    }
+
+    /*------------Nav icons------------*/
+    .main-nav .menu-item a {
+        /* Display & Box Model */
+        padding: 5px 0;
+        /* text-align: center; */
+    }
+
+    .nav-menus a[class="active"] {
+        /* Other */
+        font-size: 1rem;
+    }
+
+}
