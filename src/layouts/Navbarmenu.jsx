@@ -4,7 +4,7 @@
 */
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaChevronDown } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import NavbarCSS from "./navbar.module.css";
 import logo from "../assets/Images/logo.png";
