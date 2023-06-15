@@ -94,8 +94,15 @@ const Navbarmenu = () => {
                   </NavLink>
                 </li>
 
-                <li className={NavbarCSS["menu-logo"]}>
-                  <img className={NavbarCSS["nav-logo"]} src={logo} />
+                <li className={NavbarCSS["menu-logo"]} href="/">
+                  <NavLink
+                    className={NavbarCSS["logo-noU"]}
+                    exact="true"
+                    onClick={toggleClass}
+                    to={`/`}
+                  >
+                    <img className={NavbarCSS["nav-logo"]} src={logo} />
+                  </NavLink>
                 </li>
 
                 <li className={NavbarCSS["menu-item"]}>
