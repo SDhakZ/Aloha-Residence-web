@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { ContactComponent } from "./ContactComponent";
+import { FAQContact } from "../FAQ/FAQ";
 
-export const ContactUs = () => {
+const ContactUs = () => {
+  const faqRef = useRef();
+
+  const scrollToFAQ = () => {
+    faqRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <ContactComponent />
+      <ContactComponent onFAQClick={scrollToFAQ} />
+      <div ref={faqRef}>
+        <FAQContact />
+      </div>
     </>
   );
 };
+
+export default ContactUs;

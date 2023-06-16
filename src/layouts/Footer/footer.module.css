@@ -68,8 +68,8 @@
   position: relative;
   /* Other */
   font-size: var(--footer-paragraph-fs);
-  color: #525252;
-  font-weight: 600;
+  color: #5F5F5F;
+  font-weight: 500;
   line-height: 33px;
   text-align: justify;
 }
@@ -118,7 +118,7 @@
   display: inline-block;
   /* Other */
   font-size: var(--footer-paragraph-fs);
-  color: #5F5F5F;
+  color: #797979;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -128,7 +128,7 @@
   /* Display & Box Model */
   margin-left: 4px;
   /* Other */
-  color: #3d3d3d;
+  color: #329e4d;
 }
 
 .footer-ul li {
@@ -138,6 +138,7 @@
 .F-contact-list {
   font-size: 1.05rem;
   font-weight: 500;
+  color: #5F5F5F;
 }
 
 .icon {
@@ -364,7 +365,7 @@
     --footer-heading-fs: 1.2rem;
     --footer-companyName-fs: 1.5rem;
     --footer-paragraph-fs: 0.9rem;
-    --F-w-logoImage: 40px;
+    --F-w-logoImage: 50px;
 
   }
 

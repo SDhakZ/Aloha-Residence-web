@@ -39,30 +39,29 @@ export const Footer = (props) => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/themes">Gallery</a>
+                <a href="/gallery">Gallery</a>
               </li>
               <li>
-                <a href="/UiUxtrends">Layouts</a>
+                <a href="/layouts">Layouts</a>
               </li>{" "}
               <li>
-                <a href="/element-showcase">Our Offerings</a>
+                <a href="/our-offerings">Our Offerings</a>
               </li>
             </ul>
             <ul className={FooterCSS["footer-ul"]}>
               <li>
-                <a href="/button-collections">About Us</a>
+                <a href="/about-us">About Us</a>
               </li>
               <li>
-                <a href="/box-shadow-showcase">Contact Us</a>
+                <a href="/contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="/card-effect-collections">FAQ's</a>
+                <a href="/faq">FAQ's</a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Start of Link with us column. */}
         <div className={FooterCSS["footer-column"]}>
           <h4>Contacts </h4>
           <ul className={FooterCSS["F-contact-list"]}>

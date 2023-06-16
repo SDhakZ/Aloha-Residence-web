@@ -6,7 +6,7 @@
     /* Other */
     font-family: "Montserrat";
     font-size: clamp(1.5rem, 3vw + 1rem, 3.4rem);
-    color: #313131;
+    color: var(--secondary-black);
     font-weight: 600;
 }
 

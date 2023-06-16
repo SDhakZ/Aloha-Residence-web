@@ -4,7 +4,7 @@ import ContactUsCSS from "./ContactUs.module.css";
 import Heading from "../../components/heading/Heading";
 import grass from "../../assets/images/grass.png";
 
-export const ContactComponent = () => {
+export const ContactComponent = ({ onFAQClick }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
@@ -109,7 +109,15 @@ export const ContactComponent = () => {
                   required
                 />
                 <div className={ContactUsCSS["C-btn-container"]}>
-                  <a href="/faq">View Frequently Asked Questions</a>
+                  <a
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onFAQClick();
+                    }}
+                    href="/faq"
+                  >
+                    View Frequently Asked Questions
+                  </a>
                   <button
                     className={`${ContactUsCSS["C-send-btn"]}`}
                     type="submit"
