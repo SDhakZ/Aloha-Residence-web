@@ -47,6 +47,7 @@ const Navbarmenu = () => {
             <nav className={NavbarCSS["main-nav"]}>
               <div className={NavbarCSS["nav-logo-name"]}>
                 <img src={logo} className={NavbarCSS["nav-logo2"]} />
+                <h2 className={NavbarCSS["nav-name"]}>Aloha Residence</h2>
               </div>
               {/* Responsive Menu Button */}
               {isResponsiveclose === true ? (

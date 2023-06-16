@@ -239,10 +239,10 @@ li {
     }
 
     .nav-name {
-        font-family: 'Poppins', sans-serif;
-        color: var(--primary-black);
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-family: var(--primary-font2);
+        color: var(--secondary-black);
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 
     .main-nav {
@@ -344,6 +344,12 @@ li {
         color: #005E04 !important;
         font-size: 1.2rem;
     }
+
+    .nav-name {
+
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 480px) {
@@ -368,7 +374,7 @@ li {
 
     .nav-logo2 {
         max-width: 70px;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
     /*------------Nav icons------------*/
@@ -392,6 +398,12 @@ li {
     .nav-menus a[class="active"] {
         /* Other */
         font-size: 1rem;
+    }
+
+    .nav-name {
+
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 
 }
