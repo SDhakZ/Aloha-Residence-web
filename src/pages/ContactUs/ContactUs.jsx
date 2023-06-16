@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { ContactComponent } from "./ContactComponent";
 import { FAQContact } from "../FAQ/FAQ";
+import GoToTop from "../../components/GoToTop/GoToTop";
 
 const ContactUs = () => {
   const faqRef = useRef();
@@ -19,6 +20,7 @@ const ContactUs = () => {
       <div ref={faqRef}>
         <FAQContact />
       </div>
+      <GoToTop />
     </>
   );
 };
