@@ -13,7 +13,7 @@
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Karla', sans-serif;
   --primary-font2: 'Montserrat', sans-serif;
-  --global-mainContainer-pd: 3rem 8.56rem 7.3rem;
+  --global-mainContainer-pd: 3.2rem 11.5rem 7.3rem;
 }
 
 * {
@@ -24,4 +24,36 @@
 
 body {
   background-color: #FBFBFB;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --global-mainContainer-pd: 2.8rem 8.5rem 7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --global-mainContainer-pd: 2.6rem 3.75rem 6.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --global-mainContainer-pd: 2.2rem 3.75rem 6.2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  :root {
+    --global-mainContainer-pd: 1.8rem 3rem 6rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  :root {
+    --global-mainContainer-pd: 1.5rem 1.8rem 6rem;
+  }
 }

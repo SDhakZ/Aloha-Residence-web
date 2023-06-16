@@ -1,0 +1,168 @@
+.C-main-container {
+    background-color: var(--secondary-color);
+
+    position: relative;
+}
+
+.C-contact-container {
+    padding: var(--global-mainContainer-pd);
+}
+
+.C-secondary-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 40px;
+    justify-content: space-between;
+    min-height: 65vh;
+}
+
+.C-map {
+    width: 100%;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.C-map-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.C-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #f5f5f5;
+}
+
+.C-contact-list li {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.icon {
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.C-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.C-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    height: 410px;
+}
+
+.C-form-heading {
+    font-family: var(--primary-font2);
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #e4e4e4;
+}
+
+.C-field,
+.C-text-area {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #2B8245;
+    border-radius: 4px;
+    font-weight: 400;
+    border: none;
+    color: whitesmoke;
+}
+
+.C-field::placeholder,
+.C-text-area::placeholder {
+    color: #d6d6d6;
+    font-size: 1.05rem;
+}
+
+.C-field:focus,
+.C-text-area:focus {
+    border: 2px solid #f0f0f0;
+
+}
+
+.C-text-area {
+    height: 200px;
+    resize: vertical;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+
+}
+
+.C-btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.C-btn-container a {
+    color: rgb(226, 226, 226);
+    transition: all 0.2s;
+}
+
+.C-btn-container a:hover {
+    color: #45d4ff;
+}
+
+.C-send-btn {
+    all: unset;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    border-radius: 4px;
+    background-color: #FF9F0F;
+    transition: background-color 0.3s ease-in-out;
+    padding: 7px 0px;
+    width: 120px;
+    text-align: center;
+}
+
+
+.C-send-btn:hover {
+    background-color: #ffffff;
+    color: #ff8f45;
+}
+
+.C-grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(92, 92, 92);
+    box-shadow: 0px 0px 13px 1px #787878;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: #1b1b1b;
+}

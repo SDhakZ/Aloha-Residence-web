@@ -3,9 +3,9 @@
     /* Width/Height setting */
     --nav-container-h: 5rem;
     --nav-subMenuContainer-w: 230px;
-    --nav-logo-mw: 115px;
+    --nav-logo-mw: 105px;
     /* Margin/Padding setting */
-    --nav-container-pd: 1.8rem 11.5rem;
+    --nav-container-pd: 1.2rem 11.5rem;
     --nav-menuItems-m: 20px 10px;
     /* Font setting */
     --nav-menuItems-fs: 1.15rem;
@@ -122,6 +122,14 @@ li {
     list-style-type: none;
 }
 
+.contact-btn {
+    padding: 9px 15px;
+    background-color: #FF9F0F;
+    border-radius: 5px;
+    color: #fbfbfb !important;
+}
+
+
 @media (max-width: 1400px) {
     :root {
         /* Width/Height setting */
@@ -210,6 +218,13 @@ li {
         /* Font setting */
         --nav-menuItems-fs: 1.2rem;
         --nav-menuItems-scale: scale(1.01) translateY(-1px) !important;
+    }
+
+    .contact-btn {
+        padding: none;
+        background-color: transparent;
+        border-radius: none;
+        color: var(--primary-black) !important;
     }
 
     .nav-logo-name {

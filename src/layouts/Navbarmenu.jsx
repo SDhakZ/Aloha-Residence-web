@@ -135,6 +135,7 @@ const Navbarmenu = () => {
                       window.scrollTo({ top: 0 });
                     }}
                     to={`/contact-us`}
+                    className={NavbarCSS["contact-btn"]}
                   >
                     Contact Us
                   </NavLink>
