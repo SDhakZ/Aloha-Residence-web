@@ -2,12 +2,12 @@
 - Navigation bar layout component
 - Has responsive sttings which consists of toggle button
 */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import NavbarCSS from "./navbar.module.css";
-import logo from "../assets/Images/logo.png";
+import logo from "../../assets/Images/logo.png";
 
 const Navbarmenu = () => {
   const [isMenu, setisMenu] = useState(false);
@@ -16,15 +16,31 @@ const Navbarmenu = () => {
     setisMenu(isMenu === false ? true : false);
     setResponsiveclose(isResponsiveclose === false ? true : false);
   };
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const visible = prevScrollPos > currentScrollPos;
 
+      setIsVisible(visible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
   const [isMenuSubMenu, setMenuSubMenu] = useState(false);
 
-  const toggleSubmenu = () => {
-    setMenuSubMenu(isMenuSubMenu === false ? true : false);
-  };
-
   return (
-    <header className={NavbarCSS["nav-header"]}>
+    <header
+      className={`${NavbarCSS["nav-header"]} ${
+        isVisible ? "" : NavbarCSS["nav-hidden"]
+      }`}
+    >
       <div className={NavbarCSS["nav-container"]}>
         <div className={NavbarCSS["nav-row"]}>
           <div className={NavbarCSS["nav-menus"]}>

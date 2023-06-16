@@ -1,6 +1,14 @@
+:root {
+    --C-heading2-fs: 2rem;
+    --C-field-pd: 10px 15px;
+    --C-detail-fs: 1.1rem;
+    --C-field-fs: 1.08rem;
+    --C-btn-fs: 1.2rem;
+    --C-btn-w: 110px;
+}
+
 .C-main-container {
     background-color: var(--secondary-color);
-
     position: relative;
 }
 
@@ -20,7 +28,9 @@
 .C-map {
     width: 100%;
     max-width: 700px;
-    min-width: 500px;
+    min-width: 400px;
+    height: 450px;
+    background-color: #0e3b1c;
 }
 
 .C-map-detail {
@@ -39,7 +49,7 @@
 }
 
 .C-contact-list li {
-    font-size: 1.1rem;
+    font-size: var(--C-detail-fs);
     font-weight: 400;
 }
 
@@ -47,7 +57,7 @@
     width: 25px;
     margin-right: 10px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: calc(var(--C-detail-fs) + 2px);
 }
 
 .C-form-container {
@@ -69,9 +79,9 @@
 
 .C-form-heading {
     font-family: var(--primary-font2);
-    font-size: 2.2rem;
-    font-weight: 500;
-    color: #e4e4e4;
+    font-size: var(--C-heading2-fs);
+    font-weight: 400;
+    color: #d0f0cf;
 }
 
 .C-field,
@@ -79,13 +89,14 @@
     all: unset;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 15px;
-    font-size: 1.1rem;
+    padding: var(--C-field-pd);
+    font-size: var(--C-field-fs);
     background-color: #2B8245;
     border-radius: 4px;
     font-weight: 400;
     border: none;
-    color: whitesmoke;
+    color: rgb(7, 68, 35);
+    border: 2px solid #03501a;
 }
 
 .C-field::placeholder,
@@ -128,12 +139,12 @@
     cursor: pointer;
     color: #ffffff;
     font-family: var(--primary-font);
-    font-size: 1.2rem;
+    font-size: var(--C-btn-fs);
     border-radius: 4px;
     background-color: #FF9F0F;
     transition: background-color 0.3s ease-in-out;
     padding: 7px 0px;
-    width: 120px;
+    width: var(--C-btn-w);
     text-align: center;
 }
 
@@ -165,4 +176,79 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     color: #1b1b1b;
+}
+
+
+
+@media (max-width: 1200px) {
+    :root {
+        --C-heading2-fs: 1.8rem;
+        --C-field-pd: 7px 15px;
+        --C-detail-fs: 1.1rem;
+        --C-field-fs: 1.08rem;
+        --C-btn-fs: 1.15rem;
+        --C-btn-w: 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    :root {
+        --C-heading2-fs: 2rem;
+        --C-field-pd: 7px 15px;
+        --C-detail-fs: 1rem;
+        --C-field-fs: 1.08rem;
+        --C-btn-fs: 1.15rem;
+        --C-btn-w: 100px;
+    }
+
+    .C-secondary-container {
+        flex-direction: column;
+        gap: 40px;
+        min-height: 0;
+    }
+
+    .C-map {
+        max-width: 700px;
+        min-width: 100px;
+        height: 400px;
+    }
+
+
+
+}
+
+
+@media (max-width: 480px) {
+    :root {
+        --C-heading2-fs: 1.5rem;
+        --C-field-pd: 7px 15px;
+        --C-detail-fs: 0.8rem;
+        --C-field-fs: 1rem;
+        --C-btn-fs: 1.15rem;
+        --C-btn-w: 100%;
+    }
+
+    .C-secondary-container {
+        flex-direction: column;
+        gap: 40px;
+        min-height: 0;
+    }
+
+    .C-map {
+        max-width: 700px;
+        min-width: 100px;
+        height: 400px;
+    }
+
+    .C-btn-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 20px;
+        margin-right: 2px;
+    }
+
 }
