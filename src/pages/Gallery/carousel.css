@@ -1,0 +1,9 @@
+.carousel .thumbs-wrapper {
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel .thumb {
+        display: none;
+    }
+}

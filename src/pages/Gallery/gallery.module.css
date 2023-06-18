@@ -1,0 +1,132 @@
+:root {
+    --GA-secondary-gap: 50px;
+    --GA-detail-gap: 8px;
+    --GA-heading-fs: 1.9rem;
+    --GA-p-fs: 1.1rem;
+}
+
+.GA-main-container {
+    padding: var(--global-mainContainer-pd);
+}
+
+.GA-secondary-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--GA-secondary-gap);
+    margin-top: -30px;
+}
+
+.GA-details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--GA-detail-gap);
+}
+
+.GA-heading {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: var(--GA-heading-fs);
+    max-width: 900px;
+
+}
+
+.GA-carousel-heading {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: var(--GA-heading-fs);
+    max-width: 900px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.GA-img {
+    max-width: 100%;
+    height: auto;
+    width: 1100px;
+}
+
+.GA-carousel {
+    max-width: 100%;
+    height: auto;
+    width: 1000px;
+}
+
+@media all and (max-width: 1400px) {
+    :root {
+        --GA-secondary-gap: 40px;
+        --GA-detail-gap: 8px;
+        --GA-heading-fs: 1.8rem;
+        --GA-p-fs: 1.05rem;
+
+    }
+
+    .GA-secondary-container {
+        margin-top: -10px;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+    .GA-carousel {
+        max-width: 100%;
+        width: 800px;
+        height: auto;
+    }
+
+    .GA-carousel-heading {
+
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .GA-carousel {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media all and (max-width: 769px) {
+    :root {
+        --GA-secondary-gap: 30px;
+        --GA-heading-fs: 1.5rem;
+    }
+
+    .GA-secondary-container {
+        margin-top: -5px;
+    }
+
+    .GA-carousel-heading {
+
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    :root {
+        --GA-secondary-gap: 20px;
+        --GA-detail-gap: 6px;
+        --GA-heading-fs: 1.1rem;
+    }
+
+    .GA-secondary-container {
+        margin-top: 0px;
+    }
+
+    .GA-carousel-heading {
+
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+}

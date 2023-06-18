@@ -6,6 +6,7 @@ import Footer from "./layouts/Footer/Footer";
 import FAQ from "./pages/FAQ/FAQ";
 import Layouts from "./pages/Layouts/Layouts";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="layouts" element={<Layouts />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="gallery" element={<Gallery />} />
         </Routes>
       </Router>
       <Footer />
