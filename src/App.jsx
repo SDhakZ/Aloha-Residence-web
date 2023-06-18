@@ -4,6 +4,7 @@ import Navbarmenu from "./layouts//Navbar/Navbarmenu";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./layouts/Footer/Footer";
 import FAQ from "./pages/FAQ/FAQ";
+import Layouts from "./pages/Layouts/Layouts";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="faq" element={<FAQ />} />
+          <Route path="layouts" element={<Layouts />} />
         </Routes>
       </Router>
       <Footer />
