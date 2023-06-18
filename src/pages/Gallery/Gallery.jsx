@@ -46,7 +46,13 @@ const Gallery = () => {
               <h2 className={GalleryCSS["GA-carousel-heading"]}>
                 {gallery.title}
               </h2>
-              <Carousel autoPlay width="100%" emulateTouch infiniteLoop>
+              <Carousel
+                dynamicHeight
+                autoPlay
+                width="100%"
+                emulateTouch
+                infiniteLoop
+              >
                 {gallery.data.map((item) => (
                   <div key={item.id}>
                     <img src={item.img} />
