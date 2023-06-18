@@ -5,6 +5,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./layouts/Footer/Footer";
 import FAQ from "./pages/FAQ/FAQ";
 import Layouts from "./pages/Layouts/Layouts";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="layouts" element={<Layouts />} />
+          <Route path="about-us" element={<AboutUs />} />
         </Routes>
       </Router>
       <Footer />

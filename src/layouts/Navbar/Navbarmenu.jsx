@@ -33,7 +33,6 @@ const Navbarmenu = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
-  const [isMenuSubMenu, setMenuSubMenu] = useState(false);
 
   return (
     <header
