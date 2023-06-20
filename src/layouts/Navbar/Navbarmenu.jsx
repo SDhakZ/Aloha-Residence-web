@@ -93,7 +93,7 @@ const Navbarmenu = () => {
                       toggleClass();
                       window.scrollTo({ top: 0 });
                     }}
-                    to={`/themes`}
+                    to={`/our-offerings`}
                   >
                     Our Offerings
                   </NavLink>

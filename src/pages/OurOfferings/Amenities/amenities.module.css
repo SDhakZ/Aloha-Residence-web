@@ -1,0 +1,122 @@
+:root {
+    --AM-carContainer-gap: 50px 20px;
+    --AM-card-w: 340px;
+    --AM-card-h: 420px;
+    --AM-img-h: 160px;
+    --AM-h3-fs: 1.5rem;
+    --AM-li-fs: 1.05rem;
+}
+
+.AM-main-container {
+    padding: var(--global-mainContainer-pd);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.AM-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--AM-carContainer-gap);
+    max-width: 1400px;
+}
+
+.AM-card {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--AM-card-h);
+    max-height: 500px;
+    height: 100%;
+    max-width: var(--AM-card-w);
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #FF9F0F;
+    border-radius: 10px;
+    gap: 20px;
+    filter: drop-shadow(0px 4px 11px #F0E3DB);
+    box-shadow: 0px 0px 7px 0px #cccccc;
+}
+
+.AM-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.AM-card-top h3 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: var(--AM-h3-fs);
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.AM-card-imgContainer {
+    max-height: 100%;
+    height: var(--AM-img-h);
+    display: flex;
+    justify-content: center;
+
+}
+
+.AM-card-img {
+    max-height: 100%;
+
+    height: var(--AM-img-h);
+    width: auto;
+}
+
+.AM-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.AM-list li {
+    list-style-position: outside;
+    list-style-type: "- ";
+    color: #333333;
+    font-size: var(--AM-li-fs);
+    margin-left: 1.3rem;
+    font-weight: 400;
+}
+
+@media all and (max-width: 1024px) {
+    :root {
+        --AM-carContainer-gap: 40px 20px;
+        --AM-card-w: 300px;
+        --AM-card-h: 370px;
+        --AM-img-h: 120px;
+        --AM-h3-fs: 1.4rem;
+        --AM-li-fs: 1rem;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    :root {
+        --AM-carContainer-gap: 30px 20px;
+        --AM-card-w: 280px;
+
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    :root {
+        --AM-carContainer-gap: 20px 20px;
+        --AM-card-w: 280px;
+        --AM-card-h: 320px;
+        --AM-img-h: 110px;
+        --AM-h3-fs: 1.2rem;
+        --AM-li-fs: 0.9rem;
+    }
+
+    .AM-card-top {
+        gap: 10px;
+    }
+}
