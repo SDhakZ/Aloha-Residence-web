@@ -60,7 +60,7 @@ const OutdoorGallery = [
   {
     id: 4,
     img: `/Gallery/OutdoorGallery/3.jpg`,
-    legend: `Entarnce`,
+    legend: `Entrance`,
   },
   {
     id: 5,

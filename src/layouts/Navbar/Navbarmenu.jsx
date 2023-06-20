@@ -21,7 +21,8 @@ const Navbarmenu = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      const visible = prevScrollPos > currentScrollPos;
+      const visible =
+        prevScrollPos > currentScrollPos || currentScrollPos < 100;
 
       setIsVisible(visible);
       setPrevScrollPos(currentScrollPos);
@@ -33,7 +34,6 @@ const Navbarmenu = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
-
   return (
     <header
       className={`${NavbarCSS["nav-header"]} ${
