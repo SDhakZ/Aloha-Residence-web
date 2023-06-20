@@ -1,6 +1,6 @@
 import React from "react";
 import FAQCSS from "./FAQ.module.css";
-import Heading from "../../components/heading/Heading";
+import Heading from "../../components/Heading/Heading";
 import { FAQCard, StillHaveQuestion } from "./FAQCard";
 import faqData from "../../data/faqData";
 

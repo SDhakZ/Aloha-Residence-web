@@ -1,6 +1,6 @@
 import React from "react";
 import LayoutsCSS from "./layouts.module.css";
-import Heading from "../../components/heading/Heading";
+import Heading from "../../components/Heading/Heading";
 import TypeA from "../../assets/LayoutImages/TypeA.png";
 import TypeB from "../../assets/LayoutImages/TypeB.png";
 import TypeC from "../../assets/LayoutImages/TypeC.png";

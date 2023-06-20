@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactUsCSS from "./ContactUs.module.css";
-import Heading from "../../components/heading/Heading";
 import grass from "../../assets/images/grass.png";
+import Heading from "../../components/Heading/Heading";
 
 export const ContactComponent = ({ onFAQClick }) => {
   const form = useRef();

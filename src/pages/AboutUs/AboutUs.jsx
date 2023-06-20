@@ -1,6 +1,6 @@
 import React from "react";
 import AboutUsCSS from "./aboutUs.module.css";
-import Heading from "../../components/heading/Heading";
+import Heading from "../../components/Heading/Heading";
 import AboutUsPic from "../../assets/Images/AboutUsPic.png";
 const AboutUs = () => {
   return (

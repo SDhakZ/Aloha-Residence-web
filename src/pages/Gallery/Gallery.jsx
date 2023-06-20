@@ -1,6 +1,6 @@
 import React from "react";
 import GalleryCSS from "./gallery.module.css";
-import Heading from "../../components/heading/Heading";
+import Heading from "../../components/Heading/Heading";
 import GalleryPic from "../../assets/images/GalleryPic.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
