@@ -1,12 +1,21 @@
 :root {
     --HAU-secondary-gap: 50px;
     --HAU-detail-gap: 8px;
-    --HAU-heading-fs: 1.9rem;
+    --HAU-heading-fs: 1.6rem;
     --HAU-p-fs: 1.1rem;
 }
 
 .HAU-main-container {
+
     padding: var(--global-mainContainer-pd);
+}
+
+.HAU-h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw + 1rem, 3.4rem);
+    color: var(--primary-black);
+    font-weight: 500;
+    font-family: var(--primary-fontn);
 }
 
 .HAU-secondary-container {
@@ -15,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: var(--HAU-secondary-gap);
-    margin-top: -30px;
+
 }
 
 .HAU-details-container {
@@ -69,7 +78,7 @@
     :root {
         --HAU-secondary-gap: 40px;
         --HAU-detail-gap: 8px;
-        --HAU-heading-fs: 1.8rem;
+        --HAU-heading-fs: 1.5rem;
         --HAU-p-fs: 1.05rem;
 
     }

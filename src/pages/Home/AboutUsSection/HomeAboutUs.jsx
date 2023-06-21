@@ -5,7 +5,7 @@ import AboutUsPic from "../../../assets/Images/AboutUsPic.png";
 export const HomeAboutUs = () => {
   return (
     <div className={HomeAboutUsCSS["HAU-main-container"]}>
-      <Heading headingName="About Us" />
+      <h2 className={HomeAboutUsCSS["HAU-h2"]}>About Us</h2>
       <div className={HomeAboutUsCSS["HAU-secondary-container"]}>
         <div className={HomeAboutUsCSS["HAU-details-container"]}>
           <h2 className={HomeAboutUsCSS["HAU-heading"]}>

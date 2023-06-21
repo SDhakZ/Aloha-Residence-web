@@ -1,0 +1,133 @@
+:root {
+    --HR-h1-fs: 4rem;
+    --HR-h1-mt: 75px;
+    --HR-apartment-top: 120%;
+    --HR-shape-top: 70%;
+    --HR-apartment-width: 90%;
+    --HR-container-h: 650px;
+}
+
+.HR-main-container {
+    height: var(--HR-container-h);
+    max-height: 600px;
+    position: relative;
+}
+
+.HR-h1,
+.HR-span {
+    position: relative;
+    text-align: center;
+    margin-top: var(--HR-h1-mt);
+    font-family: "Raleway", sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: var(--HR-h1-fs);
+    z-index: -3;
+}
+
+.HR-apartment-container {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    width: var(--HR-apartment-width);
+    z-index: -2;
+    top: var(--HR-apartment-top);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(1deg);
+}
+
+.HR-shape-container {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: -3;
+    top: var(--HR-shape-top);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.HR-shape-container img {
+    width: 100%;
+}
+
+.HR-apartment-container img {
+    width: 100%;
+}
+
+@media all and (max-width: 1400px) {
+    :root {
+        --HR-h1-fs: 3rem;
+        --HR-h1-mt: 70px;
+        --HR-apartment-top: 120%;
+        --HR-shape-top: 70%;
+        --HR-apartment-width: 100%;
+        --HR-container-h: 500px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    :root {
+        --HR-h1-fs: 2.7rem;
+        --HR-h1-mt: 50px;
+        --HR-apartment-top: 120%;
+        --HR-shape-top: 70%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 450px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    :root {
+        --HR-h1-fs: 2.2rem;
+        --HR-h1-mt: 40px;
+        --HR-apartment-top: 110%;
+        --HR-shape-top: 60%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 390px;
+    }
+}
+
+@media all and (max-width: 769px) {
+    :root {
+        --HR-h1-fs: 1.9rem;
+        --HR-h1-mt: 25px;
+        --HR-apartment-top: 110%;
+        --HR-shape-top: 60%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 290px;
+    }
+}
+
+
+@media all and (max-width: 590px) {
+    :root {
+        --HR-h1-fs: 1.5rem;
+        --HR-h1-mt: 25px;
+        --HR-apartment-top: 90%;
+        --HR-shape-top: 50%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 35vh;
+    }
+}
+
+@media all and (max-width: 480px) {
+    :root {
+        --HR-h1-fs: 1.5rem;
+        --HR-h1-mt: 20px;
+        --HR-apartment-top: 83%;
+        --HR-shape-top: 50%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 28vh;
+    }
+}
+
+@media all and (max-width: 350px) {
+    :root {
+        --HR-h1-fs: 1.3rem;
+        --HR-h1-mt: 20px;
+        --HR-apartment-top: 82%;
+        --HR-shape-top: 50%;
+        --HR-apartment-width: 105%;
+        --HR-container-h: 23vh;
+    }
+}

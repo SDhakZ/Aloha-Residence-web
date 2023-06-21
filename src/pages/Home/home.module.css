@@ -1,1 +1,4 @@
-.H-main-container {}
+.H-about-section {
+    background: rgb(255, 230, 200);
+    background: linear-gradient(180deg, rgba(255, 230, 200, 1) 0%, rgba(251, 251, 251, 1) 100%);
+}
