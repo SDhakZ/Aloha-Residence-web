@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import HomeAboutUsCSS from "./homeAboutUs.module.css";
-import AboutUsPic from "../../../assets/Images/AboutUsPic.png";
+import AboutUsPic from "../../../assets/Images/AboutUsPic.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

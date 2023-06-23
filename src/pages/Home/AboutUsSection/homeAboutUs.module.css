@@ -62,10 +62,11 @@
     text-align: center;
     text-align: justify;
 
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
 
+}
+
+.HAU-para-detail:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .HAU-img {
@@ -127,10 +128,9 @@
         max-width: 1050px;
         line-height: 28px;
 
+    }
 
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
+    .HAU-para-detail:not(:last-child) {
+        margin-bottom: 10px;
     }
 }

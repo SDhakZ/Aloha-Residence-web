@@ -32,10 +32,7 @@ const ContactUs = () => {
           property="og:description"
           content="Get in touch with us at Aloha Residence for any inquiries or support. You can also check our FAQ for common questions."
         />
-        <meta
-          property="og:image"
-          content={`${appUrl}/src/assets/Images/logo.png`}
-        />
+        <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/contact-us`} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${appUrl}/contact-us`} />

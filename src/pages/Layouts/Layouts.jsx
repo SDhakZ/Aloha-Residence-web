@@ -1,10 +1,10 @@
 import React from "react";
 import LayoutsCSS from "./layouts.module.css";
 import Heading from "../../components/Heading/Heading";
-import TypeA from "../../assets/LayoutImages/TypeA.png";
-import TypeB from "../../assets/LayoutImages/TypeB.png";
-import TypeC from "../../assets/LayoutImages/TypeC.png";
-import TypeD from "../../assets/LayoutImages/TypeD.png";
+import TypeA from "../../assets/LayoutImages/TypeA.webp";
+import TypeB from "../../assets/LayoutImages/TypeB.webp";
+import TypeC from "../../assets/LayoutImages/TypeC.webp";
+import TypeD from "../../assets/LayoutImages/TypeD.webp";
 import GoToTop from "../../components/GoToTop/GoToTop";
 import { Helmet } from "react-helmet-async";
 const Layouts = () => {
@@ -26,10 +26,7 @@ const Layouts = () => {
           property="og:description"
           content="Explore different layout options for apartments at Aloha Residence. Find the perfect apartment layout that suits your lifestyle and preferences."
         />
-        <meta
-          property="og:image"
-          content={`${appUrl}/src/assets/Images/logo.png`}
-        />
+        <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/layouts`} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${appUrl}/layouts`} />

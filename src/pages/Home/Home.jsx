@@ -27,10 +27,7 @@ const Home = () => {
           property="og:description"
           content="Welcome to Aloha Residence - a premier apartment community offering luxurious living spaces in Nepal. Discover your dream home and experience the epitome of modern living at Aloha Residence in Nepal."
         />
-        <meta
-          property="og:image"
-          content={`${appUrl}/src/assets/Images/logo.png`}
-        />
+        <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/`} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${appUrl}/`} />

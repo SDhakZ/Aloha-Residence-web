@@ -1,5 +1,6 @@
 {
   "name": "aloha",
+  "homepage": "https://aloharesidence.net/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

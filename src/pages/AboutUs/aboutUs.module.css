@@ -121,9 +121,12 @@
         line-height: 28px;
 
 
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
+
 
     }
+
+    .AU-para-detail:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
 }

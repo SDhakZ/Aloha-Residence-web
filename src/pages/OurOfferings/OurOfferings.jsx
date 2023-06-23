@@ -22,10 +22,7 @@ const OurOfferings = () => {
           property="og:description"
           content="Discover what Aloha Residence has to offer. Explore our range of amenities, services, and apartment options."
         />
-        <meta
-          property="og:image"
-          content={`${appUrl}/src/assets/Images/logo.png`}
-        />
+        <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/our-offerings`} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${appUrl}/our-offerings`} />
