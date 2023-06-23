@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Gallery from "./pages/Gallery/Gallery";
 import OurOfferings from "./pages/OurOfferings/OurOfferings";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
   return (
@@ -24,6 +25,16 @@ function App() {
             <Route path="about-us" element={<AboutUs />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="our-offerings" element={<OurOfferings />} />
+            <Route
+              path="*"
+              element={
+                <ErrorPage
+                  errorTitle="Page Not Found"
+                  errorMessage="Sorry, the page could not be found"
+                  showBtns={true}
+                />
+              }
+            />
           </Routes>
         </Router>
         <Footer />

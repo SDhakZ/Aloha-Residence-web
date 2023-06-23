@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import GalleryCSS from "./gallery.module.css";
 import Heading from "../../components/Heading/Heading";
 import GalleryPic from "../../assets/images/GalleryPic.webp";
@@ -29,6 +29,26 @@ const galleries = [
 ];
 
 const Gallery = () => {
+  const [isAutoplayPaused, setAutoplayPaused] = useState(false);
+  const handleSwipeStart = () => {
+    setAutoplayPaused(true);
+  };
+  const [autoplayDelay, setAutoplayDelay] = useState(5000);
+  const handleSwipeEnd = () => {
+    setAutoplayPaused(false);
+  };
+
+  const handleThumbClick = () => {
+    setAutoplayPaused(true);
+
+    // Set the delay in milliseconds before resuming autoplay
+    const delay = 3000; // Adjust the delay time as needed
+
+    // Delay autoplay resume
+    setTimeout(() => {
+      setAutoplayPaused(false);
+    }, delay);
+  };
   const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={GalleryCSS["GA-main-container"]}>
@@ -75,10 +95,14 @@ const Gallery = () => {
               </h2>
               <Carousel
                 dynamicHeight
-                autoPlay
+                autoPlay={!isAutoplayPaused}
                 width="100%"
+                interval={autoplayDelay}
                 emulateTouch
                 infiniteLoop
+                onClickThumb={handleThumbClick}
+                onSwipeStart={handleSwipeStart}
+                onSwipeEnd={handleSwipeEnd}
               >
                 {gallery.data.map((item) => (
                   <div key={item.id}>

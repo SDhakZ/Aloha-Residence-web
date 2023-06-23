@@ -4,10 +4,33 @@ import Heading from "../../components/Heading/Heading";
 import { FAQCard, StillHaveQuestion } from "./FAQCard";
 import faqData from "../../data/faqData";
 import GoToTop from "../../components/GoToTop/GoToTop";
-
+import { Helmet } from "react-helmet-async";
 const FAQ = () => {
+  const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={FAQCSS["FAQ"]}>
+      <Helmet>
+        <title>FAQ - Aloha Residence</title>
+        <meta
+          name="description"
+          content="Find answers to frequently asked questions about Aloha Residence - a premier apartment community offering luxurious living spaces, exceptional amenities, and a prime location. Get information on leasing, amenities, maintenance, and more."
+        />
+        <meta
+          name="keywords"
+          content="Aloha Residence, Apartment, FAQ, Frequently Asked Questions, Leasing, Amenities, Maintenance"
+        />
+        <meta property="og:title" content="FAQ - Aloha Residence" />
+        <meta
+          property="og:description"
+          content="Find answers to frequently asked questions about Aloha Residence. Get information on leasing, amenities, maintenance, and more."
+        />
+        <meta
+          property="og:image"
+          content="https://aloharesidence.net/OGImages/LogoOG.png"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://aloharesidence.net/faq" />
+      </Helmet>
       <Heading headingName="Frequently Asked  Question's" />
       <div className={FAQCSS["FAQ-section"]}>
         <h2 className={FAQCSS["FAQ-section-heading"]}>

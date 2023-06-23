@@ -1,7 +1,6 @@
 // Footer page to create the footer of the website.
 import React from "react";
 import FooterCSS from "./footer.module.css";
-import logo from "../../assets/Images/logo.png";
 
 // Function to create the structure of footer page.
 export const Footer = (props) => {
@@ -14,7 +13,7 @@ export const Footer = (props) => {
           <div className={FooterCSS["footer-companyName-container"]}>
             <img
               className={FooterCSS["footer-companyLogo"]}
-              src={logo}
+              src="/logo.png"
               alt="company logo"
             />
             <div className={FooterCSS["footer-companyName"]}>

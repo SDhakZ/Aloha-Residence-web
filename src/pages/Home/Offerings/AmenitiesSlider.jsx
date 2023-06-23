@@ -34,7 +34,7 @@ export const AmenitiesSlider = () => {
           },
           1200: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 25,
           },
         }}
       >

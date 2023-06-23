@@ -1,0 +1,498 @@
+:root {
+    /* Padding/Margin setting */
+    --ER-paragraph-pd: 15px 60px 25px;
+    --ER-title-pb: 10px;
+    /* Height/Width setting */
+    --ER-container-h: 800px;
+    --ER-ER-cable-h: 110px;
+    --ER-content-top: 58%;
+    /* Font setting */
+    --ER-title-fs: 3.5rem;
+    --ER-paragraph-fs: 1.2rem;
+    --ER-paragraph-lh: 30px;
+}
+
+.ER-container {
+    /* Positioning */
+    position: relative;
+    /* Display & Box Model */
+    height: var(--ER-container-h);
+    margin-top: 15px;
+    overflow: hidden;
+    /* Other */
+    color: rgb(250, 250, 250);
+}
+
+.ER-top-ceiling {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* Display & Box Model */
+    display: block;
+    width: 100%;
+    height: 7px;
+    /* Other */
+    background-image: linear-gradient(90deg,
+            rgb(168, 89, 24),
+            rgb(86, 50, 15),
+            rgb(139, 74, 20));
+}
+
+.ER-starsec {
+    content: " ";
+    /* Positioning */
+    position: absolute;
+    /* Display & Box Model */
+    width: 5px;
+    height: 5px;
+    /* Other */
+    background: transparent;
+    box-shadow: 571px 173px #00bcd4, 1732px 143px #00bcd4, 1745px 454px #ff5722,
+        234px 784px #00bcd4, 1793px 1123px #ff9800, 1076px 504px #03a9f4;
+    animation: animStar 150s linear infinite;
+}
+
+.ER-starthird {
+    content: " ";
+    /* Positioning */
+    position: absolute;
+    /* Display & Box Model */
+    width: 6px;
+    height: 6px;
+    /* Other */
+    background: transparent;
+    box-shadow: 571px 173px #ffffff, 1732px 143px #00bcd4, 1745px 454px #ff5722,
+        234px 784px #00bcd4, 1793px 1123px #ff9800, 1076px 504px #03a9f4,
+        633px 601px #ff5722, 350px 630px #ffeb3b, 1164px 782px #00bcd4;
+    animation: animStar 40s linear infinite;
+}
+
+.ER-starfourth {
+    content: " ";
+    /* Positioning */
+    position: absolute;
+    /* Display & Box Model */
+    width: 4px;
+    height: 4px;
+    /* Other */
+    background: transparent;
+    box-shadow: 571px 173px #00bcd4, 1732px 143px #00bcd4, 1745px 454px #ff5722,
+        234px 784px #00bcd4, 1793px 1123px #ff9800, 1076px 504px #03a9f4,
+        633px 601px #ff5722, 350px 630px #ffeb3b, 1164px 782px #00bcd4,
+        76px 690px #3f51b5, 1825px 701px #cddc39, 1646px 578px #ffeb3b,
+        544px 293px #2196f3, 445px 1061px #03a9f4, 928px 47px #00bcd4,
+        168px 1410px #8bc34a, 777px 782px #03a9f4, 1235px 1941px #03a9f4;
+
+    animation: animStar 50s linear infinite;
+}
+
+.ER-starfifth {
+    content: " ";
+    /* Positioning */
+    position: absolute;
+    /* Display & Box Model */
+    width: 2px;
+    height: 2px;
+    /* Other */
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 571px 173px #00bcd4, 1732px 143px #00bcd4, 1745px 454px #ff5722,
+        234px 784px #00bcd4, 1793px 1123px #ff9800, 1076px 504px #03a9f4,
+        633px 601px #ff5722, 350px 630px #ffeb3b, 1164px 782px #00bcd4,
+        76px 690px #3f51b5, 1825px 701px #cddc39, 1646px 578px #ffeb3b;
+    animation: animStar 80s linear infinite;
+}
+
+@keyframes animStar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-2000px);
+    }
+}
+
+/*=============================*
+        /* 2. CONTENT */
+/*=============================*/
+/* ---------------2.1. Section ER-error-container--------------- */
+.ER-error-container {
+    /* Positioning */
+    position: relative;
+    text-align: center;
+    /* Display & Box Model */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* Other */
+    overflow: hidden;
+}
+
+.error__overlay {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Display & Box Model */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ER-error-content {
+    /* Positioning */
+    position: absolute;
+    top: var(--ER-content-top);
+    /* Display & Box Model */
+    left: 50%;
+    width: 100%;
+    /* Other */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ER-error-message {
+    /* Positioning */
+    text-align: center;
+}
+
+.ER-message-title {
+    /* Display & Box Model */
+    max-width: 500px;
+    margin: 0 auto;
+    /* Other */
+    text-shadow: 0px 0px 10px rgba(173, 173, 173, 0.6);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: var(--ER-title-fs);
+}
+
+.ER-message-paragraph {
+    /* Display & Box Model */
+    padding: var(--ER-paragraph-pd);
+    margin: auto;
+    max-width: 680px;
+    color: #212121bb;
+    /* Other */
+    font-family: "Montserrat", sans-serif;
+    line-height: var(--ER-paragraph-lh);
+    font-size: var(--ER-paragraph-fs);
+    font-weight: 500;
+}
+
+.ER-error-nav {
+    /* Positioning */
+    text-align: center;
+    /* Display & Box Model */
+    max-width: 600px;
+    margin: 0 auto 0;
+}
+
+.ER-nav-link {
+    /* Positioning */
+    position: relative;
+    vertical-align: top;
+    /* Display & Box Model */
+    display: inline-block;
+    height: 45px;
+    width: 170px;
+    overflow: hidden;
+    margin: 0 15px;
+    /* Other */
+    line-height: 45px;
+    border: 1px solid #181828;
+    color: #181828;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.95rem;
+}
+
+.ER-nav-link:before {
+    content: "";
+    /* Positioning */
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    /* Display & Box Model */
+    width: 260px;
+    height: 200px;
+    transform: rotate(50deg);
+    /* Other */
+    background: #212121;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: rotate(50deg);
+}
+
+.ER-nav-link:after {
+    /* Positioning */
+    position: relative;
+    z-index: 9;
+    /* Other */
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ER-nav-link:after {
+    /* Other */
+    content: "Home Page";
+}
+
+.ER-retry::after {
+    /* Other */
+    content: "Retry";
+}
+
+.ER-nav-link:hover:before {
+    /* Positioning */
+    top: -60px;
+    right: -50px;
+}
+
+.ER-nav-link:hover {
+    /* Other */
+    color: #fff;
+}
+
+.ER-nav-link:nth-child(2):hover:after {
+    /* Other */
+    color: #fff;
+}
+
+/* 2.1. ---------------END Section Error--------------- */
+
+/* 2.2. ---------------END Social style--------------- */
+
+/* 2.3. ---------------Lamp ---------------*/
+.ER-lamp {
+    /* Positioning */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    align-items: center;
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 300px;
+    transform-origin: center top;
+    /* Other */
+    animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+    animation: move 7.1s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(40deg);
+    }
+
+    50% {
+        transform: rotate(-40deg);
+    }
+
+    100% {
+        transform: rotate(40deg);
+    }
+}
+
+.ER-cable {
+    /* Display & Box Model */
+    margin-top: 3px;
+    width: 8px;
+    height: var(--ER-ER-cable-h);
+    /* Other */
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(rgba(68, 49, 9, 0.7), rgb(136, 82, 46)),
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.ER-cover {
+    /* Positioning */
+    position: relative;
+    z-index: 4;
+    /* Display & Box Model */
+    width: 200px;
+    height: 80px;
+    /* Other */
+    background: #d48b5a;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.ER-in-cover {
+    /* Positioning */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -9px;
+    z-index: 3;
+    /* Display & Box Model */
+    width: 100%;
+    max-width: 200px;
+    height: 20px;
+    margin: 0px auto;
+    /* Other */
+    border-radius: 100%;
+    background: #ffb489;
+}
+
+.ER-in-cover .ER-bulb {
+    /* Positioning */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    /* Display & Box Model */
+    width: 50px;
+    height: 50px;
+    background-color: #fae955;
+    border-radius: 50%;
+    margin: 0px auto;
+    /* Other */
+    -webkit-box-shadow: 0 0 15px 7px rgba(255, 230, 0, 0.8),
+        0 0 40px 25px rgba(255, 196, 0, 0.5),
+        -75px 0 30px 15px rgba(238, 255, 0, 0.2);
+    box-shadow: 0 0 25px 7px rgba(255, 253, 127, 0.8),
+        0 0 64px 47px rgba(255, 251, 0, 0.5), 0px 0 30px 15px rgba(251, 255, 0, 0.2);
+}
+
+.ER-light {
+    /* Positioning */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -200px;
+    z-index: 1;
+    /* Display & Box Model */
+    width: 220px;
+    height: 0px;
+    margin: 0px auto;
+    transform: perspective(50em) rotateX(50deg);
+    /* Other */
+    border-bottom: 1200px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(180deg,
+            rgba(221, 200, 11, 0.548),
+            rgba(207, 159, 0, 0.548),
+            rgb(231, 131, 100)) border-box;
+
+    border-radius: 50px 50px 0px 0px;
+}
+
+/* --------------2.3. END Lamp--------------- */
+
+/*=============================*/
+
+/*=============================*
+        /* 3. RESPONSIVE */
+/*=============================*/
+
+@media (max-width: 1400px) {
+    :root {
+        /* Padding/Margin setting */
+        --ER-paragraph-pd: 13px 60px 22px;
+        /* Height/Width setting */
+        --ER-container-h: 600px;
+        --ER-ER-cable-h: 110px;
+        --ER-content-top: 57%;
+        /* Font setting */
+        --ER-title-fs: 3.2rem;
+        --ER-paragraph-fs: 1.2rem;
+    }
+
+    .ER-lamp {
+        /* Display & Box Model */
+        zoom: 0.7;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root {
+        /* Padding/Margin setting */
+        --ER-paragraph-pd: 10px 60px 18px;
+        /* Height/Width setting */
+        --ER-container-h: 550px;
+        --ER-ER-cable-h: 110px;
+        --ER-content-top: 59%;
+        /* Font setting */
+        --ER-title-fs: 2.8rem;
+        --ER-paragraph-fs: 1.1rem;
+        --ER-paragraph-lh: 26px;
+    }
+}
+
+@media (max-width: 769px) {
+    :root {
+        /* Padding/Margin setting */
+        --ER-paragraph-pd: 10px 60px 18px;
+        /* Height/Width setting */
+        --ER-container-h: 470px;
+        --ER-ER-cable-h: 110px;
+        --ER-content-top: 59%;
+        /* Font setting */
+        --ER-title-fs: 2.4rem;
+        --ER-paragraph-fs: 1.1rem;
+        --ER-paragraph-lh: 25px;
+    }
+
+    .ER-lamp {
+        zoom: 0.6;
+    }
+
+    .ER-nav-link {
+        height: 38px;
+        line-height: 38px;
+        width: 140px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        /* Padding/Margin setting */
+        --ER-paragraph-pd: 12px 30px 15px;
+        /* Height/Width setting */
+        --ER-container-h: 450px;
+        --ER-ER-cable-h: 100px;
+        --ER-content-top: 55%;
+        /* Font setting */
+        --ER-title-fs: 1.6rem;
+        --ER-paragraph-fs: 0.95rem;
+        --ER-paragraph-lh: 22px;
+    }
+
+    .ER-container {
+        /* Display & Box Model */
+        margin-top: 10px;
+    }
+
+    .ER-message-title {
+        /* Display & Box Model */
+        max-width: 330px;
+    }
+
+    .ER-lamp {
+        /* Display & Box Model */
+        zoom: 0.5;
+    }
+
+    .ER-nav-link {
+        /* Display & Box Model */
+        height: 35px;
+        width: 130px;
+        /* Other */
+        font-size: 0.8rem;
+        line-height: 35px;
+    }
+}

@@ -7,7 +7,6 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import NavbarCSS from "./navbar.module.css";
-import logo from "../../assets/Images/logo.png";
 
 const Navbarmenu = () => {
   const [isMenu, setisMenu] = useState(false);
@@ -45,7 +44,7 @@ const Navbarmenu = () => {
           <div className={NavbarCSS["nav-menus"]}>
             <nav className={NavbarCSS["main-nav"]}>
               <div className={NavbarCSS["nav-logo-name"]}>
-                <img src={logo} className={NavbarCSS["nav-logo2"]} />
+                <img src="/logo.png" className={NavbarCSS["nav-logo2"]} />
                 <h2 className={NavbarCSS["nav-name"]}>Aloha Residence</h2>
               </div>
               {/* Responsive Menu Button */}
@@ -117,7 +116,7 @@ const Navbarmenu = () => {
                     onClick={toggleClass}
                     to={`/`}
                   >
-                    <img className={NavbarCSS["nav-logo"]} src={logo} />
+                    <img className={NavbarCSS["nav-logo"]} src="/logo.png" />
                   </NavLink>
                 </li>
 

@@ -25,7 +25,6 @@ const AboutUs = () => {
         <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${appUrl}/about-us`} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Heading headingName="About Us" />
       <div className={AboutUsCSS["AU-secondary-container"]}>
