@@ -15,7 +15,7 @@
     font-size: clamp(1.5rem, 3vw + 1rem, 3.4rem);
     color: var(--primary-black);
     font-weight: 500;
-    font-family: var(--primary-fontn);
+    font-family: var(--primary-font);
 }
 
 .HAU-secondary-container {
@@ -49,7 +49,7 @@
     color: #676767;
     max-width: 800px;
     line-height: 30px;
-    font-size: 1.1rem;
+    font-size: var(--HAU-p-fs);
     text-align: center;
 }
 
@@ -94,16 +94,14 @@
         --HAU-detail-gap: 8px;
         --HAU-heading-fs: 1.5rem;
         --HAU-h3-fs: 1.4rem;
-        --HAU-p-fs: 1.01rem;
+        --HAU-p-fs: 1rem;
     }
 
     .HAU-secondary-container {
         margin-top: -5px;
     }
 
-    .HAU-para {
-        font-size: 1rem;
-    }
+
 }
 
 
@@ -111,7 +109,7 @@
     :root {
         --HAU-secondary-gap: 20px;
         --HAU-detail-gap: 6px;
-        --HAU-heading-fs: 1.1rem;
+        --HAU-heading-fs: 1.05rem;
         --HAU-p-fs: 0.9rem;
         --HAU-layoutDetail-gap: 0px;
     }
@@ -121,13 +119,11 @@
     }
 
     .HAU-para {
-        font-size: 0.9rem;
-        line-height: 23px;
+        line-height: 25px;
     }
 
     .HAU-para-detail {
-        font-weight: 500;
-        color: #676767;
+
         max-width: 1050px;
         line-height: 28px;
 

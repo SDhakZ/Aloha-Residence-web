@@ -8,7 +8,7 @@
     /* question font size*/
     --faq-fs-answer: 1.15rem;
     /* answer font size */
-    --faq-lh-answer: 32px;
+    --faq-lh-answer: 30px;
     /* answer line height */
     --faq-w-plus: 2rem;
     /* FAQ-plus sign width */
@@ -114,6 +114,18 @@
     line-height: var(--faq-lh-answer);
     color: #808080;
     font-size: var(--faq-fs-answer);
+    white-space: pre-wrap;
+}
+
+.FAQ-faqAnswer a {
+    text-decoration: none;
+    color: #F09308;
+    transition: all 0.s;
+}
+
+.FAQ-faqAnswer a:hover {
+    text-decoration: underline;
+    color: #f3bc69;
 }
 
 /* color for links*/

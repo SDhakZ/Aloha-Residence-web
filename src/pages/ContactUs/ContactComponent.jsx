@@ -4,7 +4,7 @@ import ContactUsCSS from "./ContactUs.module.css";
 import grass from "../../assets/images/grass.png";
 import Heading from "../../components/Heading/Heading";
 
-export const ContactComponent = ({ onFAQClick }) => {
+export const ContactComponent = ({ onFAQClick, slide }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
@@ -14,10 +14,10 @@ export const ContactComponent = ({ onFAQClick }) => {
 
     emailjs
       .sendForm(
-        "service_shx4app",
-        "template_ugf0itl",
+        import.meta.env.VITE_APP_EMAIL_SERVICE_KEY,
+        import.meta.env.VITE_APP_EMAIL_TEMPLATE_KEY,
         form.current,
-        "T98f59ZAmgtSkUB9c"
+        import.meta.env.VITE_APP_EMAIL_SECRET_KEY
       )
       .then(
         (result) => {
@@ -68,12 +68,16 @@ export const ContactComponent = ({ onFAQClick }) => {
                 </li>
                 <li>
                   <i className={`${ContactUsCSS.icon} fas fa-phone-alt`}></i>{" "}
-                  Tel: 5522796, 5526414 Fax: 5524571
+                  Tel: 5422796, 5426414 Fax: 5524571
                 </li>
                 <li>
                   <i className={`${ContactUsCSS.icon} fas fa-at`}></i> E-mail:{" "}
-                  <a style={{ color: "white" }} href="mailto:info@alohainn.com">
-                    info@alohainn.com
+                  <a
+                    className={ContactUsCSS["C-email"]}
+                    style={{ color: "white" }}
+                    href="mailto:info@alohainn.com"
+                  >
+                    info@aloharesidence.net
                   </a>
                 </li>
               </ul>
@@ -99,7 +103,7 @@ export const ContactComponent = ({ onFAQClick }) => {
                   type="email"
                   name="email"
                   placeholder="Enter your email address"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   required
                 />
                 <textarea
@@ -109,15 +113,20 @@ export const ContactComponent = ({ onFAQClick }) => {
                   required
                 />
                 <div className={ContactUsCSS["C-btn-container"]}>
-                  <a
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onFAQClick();
-                    }}
-                    href="/faq"
-                  >
-                    View Frequently Asked Questions
-                  </a>
+                  {slide ? (
+                    <a
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onFAQClick();
+                      }}
+                      href="/faq"
+                    >
+                      View Frequently Asked Questions
+                    </a>
+                  ) : (
+                    <a href="/faq">View Frequently Asked Questions</a>
+                  )}
+
                   <button
                     className={`${ContactUsCSS["C-send-btn"]}`}
                     type="submit"

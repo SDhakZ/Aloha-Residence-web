@@ -1,7 +1,7 @@
 :root {
     --HR-h1-fs: 4rem;
     --HR-h1-mt: 75px;
-    --HR-apartment-top: 120%;
+    --HR-apartment-top: 125%;
     --HR-shape-top: 70%;
     --HR-apartment-width: 90%;
     --HR-container-h: 650px;
@@ -54,6 +54,16 @@
     width: 100%;
 }
 
+@media all and (max-width: 1600px) {
+    :root {
+        --HR-h1-fs: 3rem;
+        --HR-h1-mt: 70px;
+        --HR-apartment-top: 110%;
+        --HR-shape-top: 70%;
+
+    }
+}
+
 @media all and (max-width: 1400px) {
     :root {
         --HR-h1-fs: 3rem;
@@ -69,7 +79,7 @@
     :root {
         --HR-h1-fs: 2.7rem;
         --HR-h1-mt: 50px;
-        --HR-apartment-top: 120%;
+        --HR-apartment-top: 115%;
         --HR-shape-top: 70%;
         --HR-apartment-width: 105%;
         --HR-container-h: 450px;
@@ -84,6 +94,14 @@
         --HR-shape-top: 60%;
         --HR-apartment-width: 105%;
         --HR-container-h: 390px;
+    }
+}
+
+@media all and (max-width: 830px) {
+    :root {
+
+        --HR-apartment-top: 95%;
+
     }
 }
 
@@ -103,7 +121,7 @@
     :root {
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 25px;
-        --HR-apartment-top: 90%;
+        --HR-apartment-top: 86%;
         --HR-shape-top: 50%;
         --HR-apartment-width: 105%;
         --HR-container-h: 35vh;
@@ -114,10 +132,10 @@
     :root {
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 20px;
-        --HR-apartment-top: 83%;
+        --HR-apartment-top: calc(90% + 2px);
         --HR-shape-top: 50%;
         --HR-apartment-width: 105%;
-        --HR-container-h: 28vh;
+        --HR-container-h: 230px;
     }
 }
 
@@ -128,6 +146,6 @@
         --HR-apartment-top: 82%;
         --HR-shape-top: 50%;
         --HR-apartment-width: 105%;
-        --HR-container-h: 23vh;
+        --HR-container-h: 200px;
     }
 }

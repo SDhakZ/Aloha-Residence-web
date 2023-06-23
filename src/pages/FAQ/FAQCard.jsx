@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import FAQCSS from "./FAQ.module.css";
 import { Link } from "react-router-dom";
-
+import parse from "html-react-parser";
 // structure for the faq questions and answer card
 export function FAQCard({ question, answer }) {
   const [expanded, setExpand] = useState(false);
@@ -30,7 +30,7 @@ export function FAQCard({ question, answer }) {
         )}
       </div>
       {expanded ? (
-        <div className={FAQCSS["FAQ-faqAnswer"]}>{answer}</div>
+        <div className={FAQCSS["FAQ-faqAnswer"]}>{parse(answer)}</div>
       ) : null}
     </button>
   );

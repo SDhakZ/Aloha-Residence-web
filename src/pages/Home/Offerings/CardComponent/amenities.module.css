@@ -1,0 +1,155 @@
+:root {
+    --AMC-carContainer-gap: 50px 20px;
+    --AMC-card-w: 340px;
+    --AMC-card-h: 420px;
+    --AMC-img-h: 160px;
+    --AMC-h3-fs: 1.5rem;
+    --AMC-li-fs: 1.05rem;
+}
+
+
+
+.AMC-main-container {
+    padding: var(--global-mainContainer-pd);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.AMC-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--AMC-carContainer-gap);
+    max-width: 1400px;
+}
+
+.AMC-card {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--AMC-card-h);
+    max-height: 420px;
+    height: 100%;
+    max-width: var(--AMC-card-w);
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #FF9F0F;
+    border-radius: 10px;
+    gap: 20px;
+    filter: drop-shadow(0px 4px 11px #F0E3DB);
+    box-shadow: 0px 0px 7px 0px #cccccc;
+    background-color: #fff8ee;
+}
+
+.AMC-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.AMC-card-top h3 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: var(--AMC-h3-fs);
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.AMC-card-imgContainer {
+    max-height: 100%;
+    height: var(--AMC-img-h);
+    display: flex;
+    justify-content: center;
+
+}
+
+.AMC-card-img {
+    max-height: 100%;
+
+    height: var(--AMC-img-h);
+    width: auto;
+}
+
+.AMC-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.AMC-list li {
+    list-style-position: outside;
+    list-style-type: "- ";
+    color: #333333;
+    font-size: var(--AMC-li-fs);
+    margin-left: 1.3rem;
+    font-weight: 400;
+}
+
+@media all and (max-width: 1400px) {
+    :root {
+        --AMC-carContainer-gap: 40px 20px;
+        --AMC-card-w: 250px;
+        --AMC-card-h: 300px;
+        --AMC-img-h: 110px;
+        --AMC-h3-fs: 1.2rem;
+        --AMC-li-fs: 0.9rem;
+    }
+
+    .AMC-card {
+        max-height: 330px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    :root {
+        --AMC-carContainer-gap: 40px 20px;
+        --AMC-card-w: 270px;
+        --AMC-card-h: 300px;
+        --AMC-img-h: 120px;
+        --AMC-h3-fs: 1.2rem;
+        --AMC-li-fs: 0.95rem;
+    }
+
+    .AMC-card {
+        max-height: 350px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    :root {
+        --AMC-carContainer-gap: 40px 20px;
+        --AMC-card-w: 300px;
+        --AMC-card-h: 370px;
+        --AMC-img-h: 120px;
+        --AMC-h3-fs: 1.4rem;
+        --AMC-li-fs: 1rem;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    :root {
+        --AMC-carContainer-gap: 30px 20px;
+        --AMC-card-w: 280px;
+
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    :root {
+        --AMC-carContainer-gap: 20px 20px;
+        --AMC-card-w: 280px;
+        --AMC-card-h: 320px;
+        --AMC-img-h: 110px;
+        --AMC-h3-fs: 1.2rem;
+        --AMC-li-fs: 0.9rem;
+    }
+
+    .AMC-card-top {
+        gap: 10px;
+    }
+}

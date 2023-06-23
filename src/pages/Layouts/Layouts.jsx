@@ -5,10 +5,35 @@ import TypeA from "../../assets/LayoutImages/TypeA.png";
 import TypeB from "../../assets/LayoutImages/TypeB.png";
 import TypeC from "../../assets/LayoutImages/TypeC.png";
 import TypeD from "../../assets/LayoutImages/TypeD.png";
-
+import GoToTop from "../../components/GoToTop/GoToTop";
+import { Helmet } from "react-helmet-async";
 const Layouts = () => {
+  const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={LayoutsCSS["L-main-container"]}>
+      <Helmet>
+        <title>Layouts - Aloha Residence</title>
+        <meta
+          name="description"
+          content="Explore different layout options for apartments at Aloha Residence. Find the perfect apartment layout that suits your lifestyle and preferences."
+        />
+        <meta
+          name="keywords"
+          content="Aloha Residence, Apartment, Layouts, Floor Plans, Options"
+        />
+        <meta property="og:title" content="Layouts - Aloha Residence" />
+        <meta
+          property="og:description"
+          content="Explore different layout options for apartments at Aloha Residence. Find the perfect apartment layout that suits your lifestyle and preferences."
+        />
+        <meta
+          property="og:image"
+          content={`${appUrl}/src/assets/Images/logo.png`}
+        />
+        <meta property="og:url" content={`${appUrl}/layouts`} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`${appUrl}/layouts`} />
+      </Helmet>
       <Heading headingName="Layouts" />
       <div className={LayoutsCSS["L-secondary-container"]}>
         <div className={LayoutsCSS["L-details-container"]}>
@@ -48,6 +73,7 @@ const Layouts = () => {
           <img className={LayoutsCSS["L-img-D"]} src={TypeD} />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 };

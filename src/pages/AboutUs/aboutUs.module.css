@@ -51,12 +51,10 @@
     line-height: 32px;
     font-size: var(--AU-p-fs);
     text-align: center;
-    text-align: justify;
+}
 
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
+.AU-para-detail:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .AU-img {

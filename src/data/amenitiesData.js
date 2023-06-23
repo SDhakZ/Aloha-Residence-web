@@ -2,7 +2,7 @@ const AmenitiesData = [
   {
     id: 1,
     title: `Living space`,
-    img: `/AmenitiesIcons/Kitchen.png`,
+    img: `/AmenitiesIcons/Living.png`,
     list: [
       "Fully furnished apartment",
       "Dining room",
@@ -61,7 +61,7 @@ const AmenitiesData = [
   {
     id: 6,
     title: `Community Amenities`,
-    img: `/AmenitiesIcons/Kitchen.png`,
+    img: `/AmenitiesIcons/Communities.png`,
     list: [
       "Fitness Centre",
       "Modern Waterfall Garden",

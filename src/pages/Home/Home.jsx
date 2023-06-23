@@ -3,19 +3,51 @@ import HomeCSS from "./home.module.css";
 import { ContactComponent } from "../ContactUs/ContactComponent";
 import { HomeAboutUs } from "./AboutUsSection/HomeAboutUs";
 import { Hero } from "./Hero/Hero";
+import { Offerings } from "./Offerings/Offerings";
+import { Helmet } from "react-helmet-async";
 const Home = () => {
+  const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={HomeCSS["H-main-container"]}>
+      <Helmet>
+        <title>Aloha Residence - Premier Apartment Living</title>
+        <meta
+          name="description"
+          content="Welcome to Aloha Residence - a premier apartment community offering luxurious living spaces in Nepal. Discover your dream home and experience the epitome of modern living at Aloha Residence in Nepal."
+        />
+        <meta
+          name="keywords"
+          content="Aloha Residence, Aloha Inn, Apartment, Home, Luxury Living, Amenities, Nepal Apartment, Kathmandu Apartments"
+        />
+        <meta
+          property="og:title"
+          content="Aloha Residence - Premier Apartment Living"
+        />
+        <meta
+          property="og:description"
+          content="Welcome to Aloha Residence - a premier apartment community offering luxurious living spaces in Nepal. Discover your dream home and experience the epitome of modern living at Aloha Residence in Nepal."
+        />
+        <meta
+          property="og:image"
+          content={`${appUrl}/src/assets/Images/logo.png`}
+        />
+        <meta property="og:url" content={`${appUrl}/`} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`${appUrl}/`} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <section>
         <Hero />
       </section>
       <section className={HomeCSS["H-about-section"]}>
         <HomeAboutUs />
       </section>
-      <section></section>
+      <section className={HomeCSS["H-offerings-section"]}>
+        <Offerings />
+      </section>
       <section></section>
       <section>
-        <ContactComponent />
+        <ContactComponent slide={false} />
       </section>
     </div>
   );

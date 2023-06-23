@@ -2,9 +2,34 @@ import React from "react";
 import AboutUsCSS from "./aboutUs.module.css";
 import Heading from "../../components/Heading/Heading";
 import AboutUsPic from "../../assets/Images/AboutUsPic.png";
+import { Helmet } from "react-helmet-async";
 const AboutUs = () => {
+  const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={AboutUsCSS["AU-main-container"]}>
+      <Helmet>
+        <title>About Us - Aloha Residence</title>
+        <meta
+          name="description"
+          content="Learn more about Aloha Residence - a premier apartment community offering luxurious living spaces, exceptional amenities, and a prime location. Discover our story, vision, and commitment to providing an unparalleled living experience."
+        />
+        <meta
+          name="keywords"
+          content="Aloha Residence, Apartment, About Us, History, Values"
+        />
+        <meta property="og:title" content="About Us - Aloha Residence" />
+        <meta
+          property="og:description"
+          content="Learn more about Aloha Residence. Discover our history, values, and commitment to providing high-quality apartments."
+        />
+        <meta
+          property="og:image"
+          content={`${appUrl}/src/assets/Images/logo.png`}
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`${appUrl}/about-us`} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <Heading headingName="About Us" />
       <div className={AboutUsCSS["AU-secondary-container"]}>
         <div className={AboutUsCSS["AU-details-container"]}>

@@ -178,6 +178,13 @@
     color: #1b1b1b;
 }
 
+.C-email {
+    transition: all 0.2s;
+}
+
+.C-email:hover {
+    color: #ffac75 !important;
+}
 
 
 @media (max-width: 1200px) {

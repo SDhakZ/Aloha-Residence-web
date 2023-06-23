@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeroCSS from "./hero.module.css";
-import Shape from "../../../assets/Images/HeroShape.png";
+import Shape from "../../../assets/Images/Shape2.svg";
 
 export const Hero = () => {
   const [scrollY, setScrollY] = useState(0);

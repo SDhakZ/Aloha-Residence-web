@@ -88,14 +88,14 @@ export const Footer = (props) => {
       <div className={FooterCSS["footer-copyright"]}>
         <span className={FooterCSS["footer-copyrightSymbol"]}>©</span>
         <p>
-          2023, Aloha Residence, rights reserved ||{" "}
-          <a
+          2023, Aloha Residence, rights reserved
+          {/* <a
             style={{ color: "#5F5F5F" }}
             className={FooterCSS["footer-tc"]}
             href="/terms-and-conditions"
           >
             Terms and conditions
-          </a>
+          </a> */}
         </p>
       </div>
     </div>
