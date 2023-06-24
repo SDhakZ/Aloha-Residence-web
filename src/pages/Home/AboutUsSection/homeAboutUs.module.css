@@ -6,7 +6,6 @@
 }
 
 .HAU-main-container {
-
     padding: var(--global-mainContainer-pd);
 }
 
@@ -41,13 +40,13 @@
     font-weight: 500;
     font-size: var(--HAU-heading-fs);
     max-width: 900px;
-
+    color: #2c2c2c;
 }
 
 .HAU-para {
     font-weight: 500;
     color: #676767;
-    max-width: 800px;
+    max-width: 850px;
     line-height: 30px;
     font-size: var(--HAU-p-fs);
     text-align: center;
@@ -110,7 +109,7 @@
     :root {
         --HAU-secondary-gap: 20px;
         --HAU-detail-gap: 6px;
-        --HAU-heading-fs: 1.05rem;
+        --HAU-heading-fs: 1rem;
         --HAU-p-fs: 0.9rem;
         --HAU-layoutDetail-gap: 0px;
     }
@@ -120,15 +119,12 @@
     }
 
     .HAU-para {
-        line-height: 25px;
-    }
+        line-height: 27px;
 
-    .HAU-para-detail {
-
-        max-width: 1050px;
-        line-height: 28px;
 
     }
+
+
 
     .HAU-para-detail:not(:last-child) {
         margin-bottom: 10px;

@@ -42,13 +42,13 @@ const FAQ = () => {
       </div>
       <div className={FAQCSS["FAQ-section"]}>
         <h2 className={FAQCSS["FAQ-section-heading"]}>Lease and Payments</h2>
-        {faqData.slice(4, 7).map(({ id, question, answer }) => {
+        {faqData.slice(4, 6).map(({ id, question, answer }) => {
           return <FAQCard key={id} question={question} answer={answer} />;
         })}
       </div>
       <div className={FAQCSS["FAQ-section"]}>
         <h2 className={FAQCSS["FAQ-section-heading"]}>Policies</h2>
-        {faqData.slice(7, 9).map(({ id, question, answer }) => {
+        {faqData.slice(6, 9).map(({ id, question, answer }) => {
           return <FAQCard key={id} question={question} answer={answer} />;
         })}
       </div>

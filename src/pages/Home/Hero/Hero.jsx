@@ -44,7 +44,7 @@ export const Hero = () => {
           />
         </figure>
         <figure className={HeroCSS["HR-shape-container"]}>
-          <img src={Shape} />
+          <img src="/Shape.webp" />
         </figure>
       </div>
     </div>

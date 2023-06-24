@@ -2,7 +2,7 @@
     --HR-h1-fs: 4rem;
     --HR-h1-mt: 75px;
     --HR-apartment-top: 125%;
-    --HR-shape-top: 70%;
+    --HR-shape-top: 135%;
     --HR-apartment-width: 90%;
     --HR-container-h: 650px;
 }
@@ -21,7 +21,7 @@
     font-family: "Raleway", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--HR-h1-fs);
-    z-index: -3;
+    z-index: 0;
 }
 
 .HR-apartment-container {
@@ -59,7 +59,7 @@
         --HR-h1-fs: 3rem;
         --HR-h1-mt: 70px;
         --HR-apartment-top: 110%;
-        --HR-shape-top: 70%;
+        --HR-shape-top: 125%;
 
     }
 }
@@ -69,7 +69,7 @@
         --HR-h1-fs: 3rem;
         --HR-h1-mt: 70px;
         --HR-apartment-top: 120%;
-        --HR-shape-top: 70%;
+        --HR-shape-top: 130%;
         --HR-apartment-width: 100%;
         --HR-container-h: 500px;
     }
@@ -80,7 +80,7 @@
         --HR-h1-fs: 2.7rem;
         --HR-h1-mt: 50px;
         --HR-apartment-top: 115%;
-        --HR-shape-top: 70%;
+        --HR-shape-top: 122%;
         --HR-apartment-width: 105%;
         --HR-container-h: 450px;
     }
@@ -91,7 +91,7 @@
         --HR-h1-fs: 2.2rem;
         --HR-h1-mt: 40px;
         --HR-apartment-top: 110%;
-        --HR-shape-top: 60%;
+        --HR-shape-top: 110%;
         --HR-apartment-width: 105%;
         --HR-container-h: 390px;
     }
@@ -101,7 +101,7 @@
     :root {
 
         --HR-apartment-top: 95%;
-
+        --HR-shape-top: 100%;
     }
 }
 
@@ -110,7 +110,7 @@
         --HR-h1-fs: 1.9rem;
         --HR-h1-mt: 25px;
         --HR-apartment-top: 110%;
-        --HR-shape-top: 60%;
+        --HR-shape-top: 120%;
         --HR-apartment-width: 105%;
         --HR-container-h: 290px;
     }
@@ -122,7 +122,7 @@
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 25px;
         --HR-apartment-top: 86%;
-        --HR-shape-top: 50%;
+        --HR-shape-top: 95%;
         --HR-apartment-width: 105%;
         --HR-container-h: 35vh;
     }
@@ -133,7 +133,7 @@
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 20px;
         --HR-apartment-top: calc(90% + 2px);
-        --HR-shape-top: 50%;
+        --HR-shape-top: 95%;
         --HR-apartment-width: 105%;
         --HR-container-h: 230px;
     }
@@ -144,7 +144,7 @@
         --HR-h1-fs: 1.3rem;
         --HR-h1-mt: 20px;
         --HR-apartment-top: 82%;
-        --HR-shape-top: 50%;
+        --HR-shape-top: 88%;
         --HR-apartment-width: 105%;
         --HR-container-h: 200px;
     }

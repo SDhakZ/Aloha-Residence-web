@@ -5,6 +5,7 @@ import { HomeAboutUs } from "./AboutUsSection/HomeAboutUs";
 import { Hero } from "./Hero/Hero";
 import { Offerings } from "./Offerings/Offerings";
 import { Helmet } from "react-helmet-async";
+import GoToTop from "../../components/GoToTop/GoToTop";
 const Home = () => {
   const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
@@ -46,6 +47,7 @@ const Home = () => {
       <section>
         <ContactComponent slide={false} />
       </section>
+      <GoToTop />
     </div>
   );
 };

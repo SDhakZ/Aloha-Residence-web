@@ -54,7 +54,7 @@
     font-weight: 500;
     font-size: calc(var(--OH-p-fs) + 2px);
     text-align: center;
-    text-align: justify;
+
     transition: all 0.2s;
 }
 
@@ -65,7 +65,6 @@
 @media all and (max-width: 1400px) {
 
     .OH-main-container {
-
         gap: 50px
     }
 }
@@ -73,7 +72,7 @@
 
 @media all and (max-width: 769px) {
     :root {
-        --OH-secondary-gap: 30px;
+        --OH-secondary-gap: 10px;
         --OH-p-fs: 1rem;
     }
 
@@ -92,7 +91,7 @@
 
     .OH-fig-container {
 
-        width: 352px;
+        width: 302px;
 
     }
 }
@@ -103,13 +102,19 @@
         --OH-p-fs: 0.9rem;
     }
 
+    .OH-para {
+
+        line-height: 27px;
+
+    }
+
     .OH-main-container {
         gap: 20px
     }
 
     .OH-fig-container {
 
-        width: 252px;
+        width: 202px;
 
     }
 }

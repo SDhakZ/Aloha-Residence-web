@@ -8,7 +8,7 @@ import Layouts from "./pages/Layouts/Layouts";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Gallery from "./pages/Gallery/Gallery";
 import OurOfferings from "./pages/OurOfferings/OurOfferings";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {

@@ -43,13 +43,17 @@ const Navbarmenu = () => {
         <div className={NavbarCSS["nav-row"]}>
           <div className={NavbarCSS["nav-menus"]}>
             <nav className={NavbarCSS["main-nav"]}>
-              <div className={NavbarCSS["nav-logo-name"]}>
+              <NavLink
+                className={NavbarCSS["nav-logo-name"]}
+                exact="true"
+                onClick={toggleClass}
+                to={`/`}
+              >
                 <img src="/logo.png" className={NavbarCSS["nav-logo2"]} />
-                <h2 className={NavbarCSS["nav-name"]}>Aloha Residence</h2>
-              </div>
+              </NavLink>
               {/* Responsive Menu Button */}
               {isResponsiveclose === true ? (
-                <span
+                <div
                   className={NavbarCSS["nav-icon"]}
                   style={{ display: "none" }}
                   onClick={() => {
@@ -57,22 +61,21 @@ const Navbarmenu = () => {
                     window.scrollTo({ top: 0 });
                   }}
                 >
-                  <span className={NavbarCSS["cross"]}>
+                  <div className={NavbarCSS["cross"]}>
                     <ImCross />
-                  </span>
-                </span>
+                  </div>
+                </div>
               ) : (
-                <span
+                <div
                   className={NavbarCSS["nav-icon"]}
                   style={{ display: "none" }}
                   onClick={toggleClass}
                 >
-                  <span className={NavbarCSS["bars"]}>
+                  <div className={NavbarCSS["bars"]}>
                     <FaBars />
-                  </span>
-                </span>
+                  </div>
+                </div>
               )}
-
               <ul
                 className={
                   isMenu

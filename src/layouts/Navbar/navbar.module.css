@@ -234,12 +234,13 @@ li {
     }
 
     .nav-logo-name {
+        text-decoration: none;
         display: flex;
         align-items: center;
     }
 
     .nav-name {
-        font-family: var(--primary-font2);
+        font-family: var(--primary-font);
         color: var(--secondary-black);
         font-size: 1.5rem;
         font-weight: 600;
@@ -269,6 +270,7 @@ li {
         cursor: pointer;
         /* Positioning */
         position: relative;
+        margin-top: 10px;
     }
 
     .nav-icon .bars svg {
@@ -357,7 +359,7 @@ li {
         /* Margin/Padding setting */
         --nav-container-pd: 0.4rem 1.8rem;
         --nav-menuItems-m: 7px 1.8rem;
-
+        --nav-container-h: 3rem;
         /* Font setting */
         --nav-menuItems-fs: 1rem;
         --nav-menuItems-scale: scale(1.01) translateY(0px) !important;
@@ -373,7 +375,7 @@ li {
     }
 
     .nav-logo2 {
-        max-width: 70px;
+        max-width: 60px;
         margin-right: 10px;
     }
 

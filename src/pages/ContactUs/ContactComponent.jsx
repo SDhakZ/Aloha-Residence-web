@@ -68,7 +68,7 @@ export const ContactComponent = ({ onFAQClick, slide }) => {
                 </li>
                 <li>
                   <i className={`${ContactUsCSS.icon} fas fa-phone-alt`}></i>{" "}
-                  Tel: 5422796, 5426414 Fax: 5524571
+                  Tel: +977-01-(5422796, 5426414) Fax: 5524571
                 </li>
                 <li>
                   <i className={`${ContactUsCSS.icon} fas fa-at`}></i> E-mail:{" "}

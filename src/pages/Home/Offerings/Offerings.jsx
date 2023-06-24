@@ -59,7 +59,13 @@ export const Offerings = () => {
           home that truly enhances your lifestyle. For a detailed look at all we
           offer, click the button below. Welcome to your new home.
         </p>
-        <a className={OfferingsCSS["OH-anchor"]} href="/about-us">
+        <a
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-offset="50"
+          className={OfferingsCSS["OH-anchor"]}
+          href="/about-us"
+        >
           View our offerings
         </a>
       </div>

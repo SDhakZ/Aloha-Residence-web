@@ -74,7 +74,7 @@ export const Footer = (props) => {
             </li>
             <li>
               <i className={`${FooterCSS.icon} fas fa-phone-alt`}></i> Tel:
-              5522796, 5526414 Fax: 5524571
+              +977-01-(5422796, 5426414)
             </li>
             <li>
               <i className={`${FooterCSS.icon} fas fa-at`}></i> E-mail:{" "}

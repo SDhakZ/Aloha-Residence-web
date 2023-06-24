@@ -35,34 +35,30 @@ const FAQdata = [
     question: `Q: What is included in the rent?`,
     answer: `The rent at our apartments includes a variety of services and utilities to ensure a comfortable living experience. These include water supply, internet connection, gas, and up to 200 units of electricity per month. Any usage above the 200-unit electricity cap would be an additional charge. These inclusions are part of our efforts to provide a hassle-free living situation for our tenants. `,
   },
+
   {
     id: 7,
-    question: `Q: What is the length of the lease agreement?`,
-    answer: `Our standard lease agreement is for a period of 12 months. However, we also offer a 6-month lease agreement for those who prefer a shorter term. If you have any questions or concerns about the lease agreement, please feel free to <a href='http://localhost:5173/contact-us'>Contact Us</a>`,
-  },
-  {
-    id: 8,
     question: `Q: Are pets allowed?`,
     answer: `We understand that many people consider pets to be part of their family. However, to maintain the quality and comfort of living for all our residents, we currently have a no pets policy in our apartments. This means that pets are not allowed in any of the units or common areas. We appreciate your understanding and cooperation on this matter. If you have any questions or concerns about this policy, please feel free to <a href='http://localhost:5173/contact-us'>Contact Us</a>`,
   },
 
   {
-    id: 9,
+    id: 8,
     question: `Q: What is your policy on renewing the lease?`,
     answer: `Our policy on lease renewal is straightforward and aimed at providing maximum convenience to our tenants. If you wish to extend your stay and renew your lease, we simply require an advanced notice of at least one month prior to the expiration of your current lease agreement. This allows us to manage our property effectively and ensures that your apartment is reserved for you for the next term. For further details or any specific concerns related to lease renewal, feel free to get in touch through the <a href='http://localhost:5173/contact-us'>Contact Us</a> page. `,
   },
   {
-    id: 10,
+    id: 9,
     question: `Q: What is the process for requesting maintenance or repairs?`,
     answer: `Requesting maintenance or repairs is straightforward. If you notice a problem in your apartment that needs addressing, the first thing you need to do is to contact our receptionist at the management office. You can do this by either visiting the office during business hours or by calling. Please provide as much detail as possible about the issue. This information will help us understand the nature of the problem and dispatch the appropriate maintenance staff or professional to your apartment.`,
   },
   {
-    id: 11,
+    id: 10,
     question: `Q: Who do I contact if there is an issue in my apartment?`,
     answer: `If you have an issue in your apartment, your first point of contact should be the receptionist at our management office. You can visit the office during business hours or call to discuss the problem. Our receptionist will assist you and, if necessary, arrange for the appropriate team member or maintenance staff to address the issue.`,
   },
   {
-    id: 12,
+    id: 11,
     question: `Q: What do I do if I have an issue outside of regular office hours?`,
     answer: `If you encounter an issue outside of our regular office hours, we've got you covered. Please directly contact our 24/7 security desk. They are fully equipped to handle a wide range of issues, or they can escalate more complex matters to the relevant team.`,
   },
