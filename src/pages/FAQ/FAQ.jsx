@@ -6,7 +6,6 @@ import faqData from "../../data/faqData";
 import GoToTop from "../../components/GoToTop/GoToTop";
 import { Helmet } from "react-helmet-async";
 const FAQ = () => {
-  const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={FAQCSS["FAQ"]}>
       <Helmet>
@@ -15,10 +14,12 @@ const FAQ = () => {
           name="description"
           content="Find answers to frequently asked questions about Aloha Residence - a premier apartment community offering luxurious living spaces, exceptional amenities, and a prime location. Get information on leasing, amenities, maintenance, and more."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
           content="Aloha Residence, Apartment, FAQ, Frequently Asked Questions, Leasing, Amenities, Maintenance"
         />
+        <meta charset="UTF-8" />
         <meta property="og:title" content="FAQ - Aloha Residence" />
         <meta
           property="og:description"

@@ -153,7 +153,8 @@
     }
 
     .L-para {
-        font-size: 0.85rem;
-        line-height: 23px;
+        font-size: 1rem;
+        line-height: 25px;
+        font-weight: 400;
     }
 }

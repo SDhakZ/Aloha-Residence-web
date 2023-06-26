@@ -211,7 +211,7 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .ER-nav-link:before {
@@ -454,7 +454,7 @@
         height: 38px;
         line-height: 38px;
         width: 140px;
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 }
 
@@ -468,7 +468,7 @@
         --ER-content-top: 55%;
         /* Font setting */
         --ER-title-fs: 1.6rem;
-        --ER-paragraph-fs: 0.95rem;
+        --ER-paragraph-fs: 1rem;
         --ER-paragraph-lh: 22px;
     }
 
@@ -492,7 +492,7 @@
         height: 35px;
         width: 130px;
         /* Other */
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 35px;
     }
 }

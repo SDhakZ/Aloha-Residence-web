@@ -38,6 +38,8 @@ const Gallery = () => {
           name="description"
           content="Take a visual tour of Aloha Residence through our gallery. Discover the elegant interiors, modern amenities, and stunning views of our apartment community."
         />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
           content="Aloha Residence, Apartment, Gallery, Images, Interiors"

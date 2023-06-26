@@ -40,7 +40,7 @@ export function FAQCard({ question, answer }) {
 export function StillHaveQuestion() {
   return (
     <div className={FAQCSS["FAQ-moreQuestionsContainer"]}>
-      <h2 className={FAQCSS["FAQ-stillHaveQuestion"]}>Still Have Question?</h2>
+      <h2 className={FAQCSS["FAQ-stillHaveQuestion"]}>Still Have Questions?</h2>
       <p className={FAQCSS["FAQ-faqContact"]}>
         If you cannot find the answer for your question in the FAQ page you can
         always contact us through our <Link to="/contact-us">Contact Us</Link>{" "}

@@ -229,7 +229,7 @@
     :root {
         --C-heading2-fs: 1.5rem;
         --C-field-pd: 7px 15px;
-        --C-detail-fs: 0.9rem;
+        --C-detail-fs: 1rem;
         --C-field-fs: 1rem;
         --C-btn-fs: 1.15rem;
         --C-btn-w: 100%;

@@ -294,9 +294,10 @@
 
   .footer-copyright {
     /* Other */
-    font-size: 0.8rem;
+    font-size: 1rem;
     /* Display & Box Model */
     margin-top: 50px;
+    font-weight: 400;
   }
 
   .footer-copyrightSymbol {
@@ -315,7 +316,7 @@
     /* Font setting */
     --footer-heading-fs: 1.2rem;
     --footer-companyName-fs: 1.3rem;
-    --footer-paragraph-fs: 0.9rem;
+    --footer-paragraph-fs: 1rem;
     --F-w-logoImage: 40px;
   }
 
@@ -331,7 +332,7 @@
     max-width: 350px;
     /* Other */
     line-height: 24px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .footer-column {
@@ -346,12 +347,12 @@
   }
 
   .F-contact-list li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     white-space: nowrap;
   }
 
   .icon {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
 }
@@ -364,7 +365,7 @@
     /* Font setting */
     --footer-heading-fs: 1.2rem;
     --footer-companyName-fs: 1.5rem;
-    --footer-paragraph-fs: 0.9rem;
+    --footer-paragraph-fs: 1rem;
     --F-w-logoImage: 50px;
 
   }
@@ -378,6 +379,10 @@
     /* Display & Box Model */
     justify-content: center;
   }
+
+  .footer-companyDetail-container p {
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 350px) {
@@ -387,7 +392,7 @@
     /* Font setting */
     --footer-heading-fs: 1.1rem;
     --footer-companyName-fs: 1.15rem;
-    --footer-paragraph-fs: 0.8rem;
+    --footer-paragraph-fs: 1rem;
 
   }
 
@@ -415,7 +420,7 @@
   }
 
   .F-contact-list li {
-    font-size: 0.85rem;
+    font-size: 1rem;
     white-space: pre-wrap;
   }
 

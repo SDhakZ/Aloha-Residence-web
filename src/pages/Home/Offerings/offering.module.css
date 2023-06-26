@@ -85,7 +85,7 @@
 @media all and (max-width: 560px) {
     :root {
         --OH-secondary-gap: 10px;
-        --OH-p-fs: 0.9rem;
+
     }
 
 
@@ -99,7 +99,7 @@
 @media all and (max-width: 480px) {
     :root {
         --OH-secondary-gap: 10px;
-        --OH-p-fs: 0.9rem;
+
     }
 
     .OH-para {

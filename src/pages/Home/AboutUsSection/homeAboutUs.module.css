@@ -110,7 +110,7 @@
         --HAU-secondary-gap: 20px;
         --HAU-detail-gap: 6px;
         --HAU-heading-fs: 1rem;
-        --HAU-p-fs: 0.9rem;
+        --HAU-p-fs: 1rem;
         --HAU-layoutDetail-gap: 0px;
     }
 
@@ -119,7 +119,7 @@
     }
 
     .HAU-para {
-        line-height: 27px;
+        line-height: 26px;
 
 
     }

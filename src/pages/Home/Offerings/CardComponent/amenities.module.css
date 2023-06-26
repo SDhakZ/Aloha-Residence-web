@@ -95,7 +95,7 @@
         --AMC-card-h: 300px;
         --AMC-img-h: 105px;
         --AMC-h3-fs: 1.2rem;
-        --AMC-li-fs: 0.9rem;
+        --AMC-li-fs: 1rem;
     }
 
 
@@ -115,7 +115,7 @@
         --AMC-card-h: 300px;
         --AMC-img-h: 120px;
         --AMC-h3-fs: 1.2rem;
-        --AMC-li-fs: 0.95rem;
+        --AMC-li-fs: 1rem;
     }
 
     .AMC-card {
@@ -151,7 +151,7 @@
         --AMC-card-h: 200px;
         --AMC-img-h: 110px;
         --AMC-h3-fs: 1.2rem;
-        --AMC-li-fs: 0.9rem;
+        --AMC-li-fs: 1rem;
     }
 
     .AMC-card-top {
@@ -161,7 +161,7 @@
     .AMC-card {
 
         min-height: var(--AMC-card-h);
-        max-height: 315px;
+        max-height: 335px;
 
         gap: 16px;
 

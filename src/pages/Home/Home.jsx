@@ -16,6 +16,8 @@ const Home = () => {
           name="description"
           content="Welcome to Aloha Residence - a premier apartment community offering luxurious living spaces in Nepal. Discover your dream home and experience the epitome of modern living at Aloha Residence in Nepal."
         />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
           content="Aloha Residence, Aloha Inn, Apartment, Home, Luxury Living, Amenities, Nepal Apartment, Kathmandu Apartments"

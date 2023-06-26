@@ -23,6 +23,7 @@ const ContactUs = () => {
           name="description"
           content="Get in touch with us at Aloha Residence Apartment for any inquiries or support. You can also check our FAQ for common questions."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
           content="Aloha Residence, Apartment, Contact, Support, FAQ"
@@ -32,6 +33,7 @@ const ContactUs = () => {
           property="og:description"
           content="Get in touch with us at Aloha Residence for any inquiries or support. You can also check our FAQ for common questions."
         />
+        <meta charset="UTF-8" />
         <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/contact-us`} />
         <meta name="robots" content="index, follow" />

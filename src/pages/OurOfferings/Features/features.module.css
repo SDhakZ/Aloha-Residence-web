@@ -188,7 +188,7 @@
     :root {
         --OF-secondaryContainer-gap: 20px;
         --OF-h2-fs: 1.2rem;
-        --OF-li-fs: 0.9rem;
+        --OF-li-fs: 1rem;
     }
 
     .OF-reliable {

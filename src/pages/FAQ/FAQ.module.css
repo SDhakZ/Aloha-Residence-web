@@ -33,7 +33,7 @@
 
 .FAQ-stillHaveQuestion {
     /* display and box model */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* other */
     text-align: center;
     font-weight: 600;
@@ -176,7 +176,7 @@
 
     .FAQ-stillHaveQuestion {
         margin-bottom: 5px;
-        margin-top: 25px;
+        margin-top: 20px;
         font-size: 2.5em;
     }
 
@@ -200,7 +200,7 @@
 @media all and (max-width: 850px) {
     :root {
         --faq-fs-question: 1rem;
-        --faq-fs-answer: 0.95rem;
+        --faq-fs-answer: 1rem;
         --faq-w-plus: 1.5rem;
         --faq-w-minus: 1.7rem;
     }
@@ -208,7 +208,7 @@
 
     .FAQ-stillHaveQuestion {
         margin-bottom: 10px;
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 2.8rem;
     }
 
@@ -237,7 +237,7 @@
 @media all and (max-width: 550px) {
     :root {
         --faq-fs-question: 1rem;
-        --faq-fs-answer: 0.9rem;
+        --faq-fs-answer: 1rem;
         --faq-w-plus: 1.2rem;
         --faq-w-minus: 1.5rem;
         --faq-lh-answer: 20px;
@@ -261,12 +261,13 @@
     }
 
     .FAQ-stillHaveQuestion {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .FAQ-faqContact {
-        font-size: 0.875rem;
+        font-size: 1rem;
         max-width: 300px;
     }
 

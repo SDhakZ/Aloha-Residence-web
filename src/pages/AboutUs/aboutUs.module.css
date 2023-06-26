@@ -101,7 +101,7 @@
         --AU-secondary-gap: 20px;
         --AU-detail-gap: 10px;
         --AU-heading-fs: 1.1rem;
-        --AU-p-fs: 0.9rem;
+        --AU-p-fs: 1rem;
         --AU-layoutDetail-gap: 0px;
     }
 
@@ -114,18 +114,13 @@
     }
 
     .AU-para {
-        font-size: 0.9rem;
         line-height: 27px;
         text-align: left;
     }
 
     .AU-para-detail {
-
         line-height: 27px;
         text-align: left;
-
-
-
     }
 
     .AU-para-detail:not(:last-child) {

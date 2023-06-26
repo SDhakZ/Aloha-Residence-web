@@ -197,8 +197,8 @@ li {
         --nav-menuItems-m: 18px 22px;
         --nav-logo-mw: 85px;
         /* Font setting */
-        --nav-menuItems-fs: 0.95rem;
-        --nav-subMenuContainerItems-fs: 0.95rem;
+        --nav-menuItems-fs: 1rem;
+        --nav-subMenuContainerItems-fs: 1rem;
     }
 
     .menu-item a {

@@ -13,6 +13,8 @@ const AboutUs = () => {
           name="description"
           content="Learn more about Aloha Residence - a premier apartment community offering luxurious living spaces, exceptional amenities, and a prime location. Discover our story, vision, and commitment to providing an unparalleled living experience."
         />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
           content="Aloha Residence, Apartment, About Us, History, Values"
