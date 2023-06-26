@@ -8,7 +8,7 @@
     /* question font size*/
     --faq-fs-answer: 1.15rem;
     /* answer font size */
-    --faq-lh-answer: 30px;
+    --faq-lh-answer: 35px;
     /* answer line height */
     --faq-w-plus: 2rem;
     /* FAQ-plus sign width */
@@ -65,6 +65,7 @@
     /* positioning */
     justify-content: space-between;
     align-items: center;
+    text-align: left;
     /* other */
     color: #525151;
     font-family: var(--primary-font);
@@ -107,7 +108,7 @@
 .FAQ-faqAnswer {
     /* display and box model */
     display: block;
-    margin-top: 0px;
+    margin-top: -5px;
     max-width: 90%;
     /* other */
     text-align: justify;
@@ -217,7 +218,7 @@
 
     .FAQ-faqAnswer {
 
-        margin-top: -10px;
+        margin-top: 0px;
 
     }
 
@@ -243,12 +244,11 @@
     }
 
     .FAQ-faqQuestion {
-        font-size: 0.875rem;
         text-align: left;
     }
 
     .FAQ-faqAnswer {
-
+        line-height: 25px;
         margin-top: 0px;
 
     }

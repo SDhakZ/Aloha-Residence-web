@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import HeroCSS from "./hero.module.css";
-import Shape from "../../../assets/Images/HeroShape.webp";
 
 export const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -41,10 +40,12 @@ export const Hero = () => {
               filter: loaded ? "brightness(1)" : "brightness(0.5)",
               transition: "filter 2s",
             }}
+            loading="eager"
+            alt="Apartment"
           />
         </figure>
         <figure className={HeroCSS["HR-shape-container"]}>
-          <img src="/Shape.webp" />
+          <img loading="eager" alt="shape" src="/Shape.webp" />
         </figure>
       </div>
     </div>

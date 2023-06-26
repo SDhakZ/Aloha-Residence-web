@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import GalleryCSS from "./gallery.module.css";
 import Heading from "../../components/Heading/Heading";
 import GalleryPic from "../../assets/images/GalleryPic.webp";
@@ -29,32 +29,6 @@ const galleries = [
 ];
 
 const Gallery = () => {
-  const [isAutoplayEnabled, setAutoplayEnabled] = useState(true);
-  useEffect(() => {
-    const handleWindowResize = () => {
-      const windowWidth = window.innerWidth;
-      setAutoplayEnabled(windowWidth >= 600);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  const handleThumbClick = () => {
-    // Pause autoplay on thumb click
-    setAutoplayEnabled(false);
-
-    // Set the delay in milliseconds before resuming autoplay
-    const delay = 3000;
-
-    // Delay autoplay resume
-    setTimeout(() => {
-      setAutoplayEnabled(true);
-    }, delay);
-  };
   const appUrl = import.meta.env.VITE_APP_WEB_URL;
   return (
     <div className={GalleryCSS["GA-main-container"]}>
@@ -101,12 +75,10 @@ const Gallery = () => {
               </h2>
               <Carousel
                 dynamicHeight
-                autoPlay={isAutoplayEnabled}
                 width="100%"
                 interval="5000"
                 emulateTouch
                 infiniteLoop
-                onClickThumb={handleThumbClick}
               >
                 {gallery.data.map((item) => (
                   <div key={item.id}>

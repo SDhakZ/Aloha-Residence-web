@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import HomeAboutUsCSS from "./homeAboutUs.module.css";
-import AboutUsPic from "../../../assets/Images/AboutUsPic.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -44,7 +43,8 @@ export const HomeAboutUs = () => {
           data-aos-offset="200"
           data-aos-anchor-placement="top-bottom"
           className={HomeAboutUsCSS["HAU-img"]}
-          src={AboutUsPic}
+          src="/AboutUsPic.webp"
+          alt="About Us"
         />{" "}
         <p
           data-aos="zoom-in-up"
