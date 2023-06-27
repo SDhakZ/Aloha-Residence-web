@@ -136,9 +136,25 @@
 }
 
 .F-contact-list {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 500;
-  color: #5F5F5F;
+  color: #777777;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.F-contact {
+  display: flex;
+  gap: 2px;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.F-contact p {
+
+  white-space: nowrap;
+
 }
 
 .icon {
@@ -146,6 +162,7 @@
   margin-right: 10px;
   text-align: center;
   font-size: 1.3rem;
+  color: #505050;
 }
 
 .newsletter-button:hover {
@@ -160,13 +177,14 @@
   /* Display & Box Model */
   display: flex;
   margin-top: 50px;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   /* Other */
   font-weight: 400;
   font-size: 1rem;
   font-weight: 600;
   color: #a1a1a1;
+
 }
 
 .footer-copyrightSymbol {
@@ -223,6 +241,13 @@
     --F-w-logoImage: 60px;
   }
 
+
+  .footer-row {
+    /* Display & Box Model */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .footer-companyDetail-container p {
     /* Other */
     line-height: 30px;
@@ -232,7 +257,7 @@
     /* Display & Box Model */
     flex: 1.2;
     margin-right: 10px;
-    min-width: 200px;
+    min-width: 400px;
   }
 
   .footer-column h4 {
@@ -268,6 +293,7 @@
   .footer-companyDetail-container {
     /* Display & Box Model */
     margin-right: 5px;
+
   }
 
   .footer-companyName-container {
@@ -331,8 +357,9 @@
     /* Display & Box Model */
     max-width: 350px;
     /* Other */
-    line-height: 24px;
+    line-height: 26px;
     font-size: 1rem;
+    font-weight: 400;
   }
 
   .footer-column {
@@ -346,14 +373,16 @@
     margin-bottom: 10px;
   }
 
-  .F-contact-list li {
+  .F-contact-list {
     font-size: 1rem;
     white-space: nowrap;
+    gap: 13px;
   }
 
   .icon {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
+
 
 }
 
@@ -378,11 +407,25 @@
   .footer-row {
     /* Display & Box Model */
     justify-content: center;
+    gap: 20px 20px;
   }
 
-  .footer-companyDetail-container p {
-    font-weight: 400;
+
+  .footer-page {
+    gap: 5px;
   }
+
+  .F-contact {
+    display: flex;
+    gap: 2px;
+    align-items: baseline;
+
+  }
+
+  .F-contact p {
+    white-space: wrap;
+  }
+
 }
 
 @media (max-width: 350px) {
@@ -399,14 +442,18 @@
   .footer-companyName-container {
     /* Display & Box Model */
     margin-bottom: 5px;
+    min-width: none;
   }
 
   .footer-companyDetail-container p {
     /* Display & Box Model */
-    max-width: 230px;
+    max-width: 500px;
     /* Other */
     font-weight: 500;
-    line-height: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: left;
+
   }
 
   .footer-column h4 {
@@ -419,9 +466,9 @@
     font-weight: 500;
   }
 
-  .F-contact-list li {
+  .F-contact-list {
     font-size: 1rem;
-    white-space: pre-wrap;
+
   }
 
 }

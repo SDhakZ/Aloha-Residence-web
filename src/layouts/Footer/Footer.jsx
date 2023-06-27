@@ -63,24 +63,26 @@ export const Footer = (props) => {
 
         <div className={FooterCSS["footer-column"]}>
           <h4>Contacts </h4>
-          <ul className={FooterCSS["F-contact-list"]}>
-            <li>
+          <div className={FooterCSS["F-contact-list"]}>
+            <div className={FooterCSS["F-contact"]}>
               <i className={`${FooterCSS.icon} fas fa-map-marker-alt`}></i>{" "}
-              Jawalakhel, Lalitpur
-            </li>
-            <li>
+              <p>Jawalakhel, Lalitpur</p>
+            </div>
+            <div className={FooterCSS["F-contact"]}>
               <i className={`${FooterCSS.icon} fas fa-envelope`}></i>{" "}
-              P.O.Box-7348, Kathmandu, Nepal
-            </li>
-            <li>
-              <i className={`${FooterCSS.icon} fas fa-phone-alt`}></i> Tel:
-              +977-01-(5422796, 5426414)
-            </li>
-            <li>
-              <i className={`${FooterCSS.icon} fas fa-at`}></i> E-mail:{" "}
-              <a href="mailto:info@alohainn.com">info@alohainn.com</a>
-            </li>
-          </ul>
+              <p>P.O.Box-7348, Kathmandu, Nepal</p>
+            </div>
+            <div className={FooterCSS["F-contact"]}>
+              <i className={`${FooterCSS.icon} fas fa-phone-alt`}></i>
+              <p>Tel: +977-01-(5422796, 5426414)</p>
+            </div>
+            <div className={FooterCSS["F-contact"]}>
+              <i className={`${FooterCSS.icon} fas fa-at`}></i>Email:{" "}
+              <a href="mailto:info@aloharesidence.net">
+                info@aloharesidence.net
+              </a>
+            </div>
+          </div>
         </div>
         {/*copyright*/}
       </div>

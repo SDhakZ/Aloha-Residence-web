@@ -75,7 +75,7 @@ export const ContactComponent = ({ onFAQClick, slide }) => {
                   <a
                     className={ContactUsCSS["C-email"]}
                     style={{ color: "white" }}
-                    href="mailto:info@alohainn.com"
+                    href="mailto:info@aloharesidence.net"
                   >
                     info@aloharesidence.net
                   </a>
