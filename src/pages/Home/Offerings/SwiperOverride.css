@@ -69,11 +69,23 @@
 }
 
 /* responsive settings */
+
+@media all and (max-width: 1650px) {
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
 @media all and (max-width: 1400px) {
     .swiper {
         height: 450px;
 
     }
+
+
 }
 
 @media all and (max-width: 1200px) {

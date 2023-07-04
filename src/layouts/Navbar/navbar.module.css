@@ -195,9 +195,9 @@ li {
         --nav-subMenuContainer-w: 170px;
         /* Margin/Padding setting */
         --nav-menuItems-m: 18px 22px;
-        --nav-logo-mw: 85px;
+        --nav-logo-mw: 75px;
         /* Font setting */
-        --nav-menuItems-fs: 1rem;
+        --nav-menuItems-fs: 0.95rem;
         --nav-subMenuContainerItems-fs: 1rem;
     }
 
@@ -210,10 +210,15 @@ li {
         border-bottom: 2px solid #005E04 !important;
     }
 
+    .nav-logo {
+
+        margin: 0 10px;
+    }
+
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 800px) {
     :root {
         /* Width/Height setting */
         --nav-container-h: 3.6rem;

@@ -34,18 +34,44 @@ export const Hero = () => {
             }px)) rotate(1deg)`,
           }}
         >
-          <img
-            src="/Apartment.webp"
-            style={{
-              filter: loaded ? "brightness(1)" : "brightness(0.5)",
-              transition: "filter 2s",
-            }}
-            loading="eager"
-            alt="Apartment"
-          />
+          <picture>
+            <source
+              media="(max-width: 480px)"
+              srcSet="/Apartment/apartment-mobile.webp"
+            />
+            <source
+              media="(max-width: 769px)"
+              srcSet="/Apartment/apartment-tablet.webp"
+            />
+            <source srcSet="/Apartment/apartment-desktop.webp" />
+            <img
+              src="/Apartment/apartment-desktop.webp" // Fallback image source for browsers that don't support srcset
+              style={{
+                filter: loaded ? "brightness(1)" : "brightness(0.5)",
+                transition: "filter 1s",
+              }}
+              loading="eager"
+              alt="Apartment"
+            />
+          </picture>
         </figure>
         <figure className={HeroCSS["HR-shape-container"]}>
-          <img loading="eager" alt="shape" src="/Shape.webp" />
+          <picture>
+            <source
+              media="(max-width: 480px)"
+              srcSet="/Shape/shape-mobile.webp"
+            />
+            <source
+              media="(max-width: 769px)"
+              srcSet="/Shape/shape-tablet.webp"
+            />
+            <source srcSet="/Shape/shape-desktop.webp" />
+            <img
+              loading="eager"
+              alt="shape"
+              src="/Shape/shape-desktop.webp" // Fallback image source for browsers that don't support srcset
+            />
+          </picture>
         </figure>
       </div>
     </div>

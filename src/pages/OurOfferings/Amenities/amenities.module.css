@@ -80,7 +80,7 @@
 
 .AM-list li {
     list-style-position: outside;
-    list-style-type: "- ";
+    list-style-type: "🔸 ";
     color: #333333;
     font-size: var(--AM-li-fs);
     margin-left: 1.3rem;

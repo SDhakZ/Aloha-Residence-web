@@ -2,7 +2,7 @@ const AmenitiesData = [
   {
     id: 1,
     title: `Living space`,
-    img: `/AmenitiesIcons/Living.png`,
+    img: `/AmenitiesIcons/Living.webp`,
     list: [
       "Fully furnished apartment",
       "Dining room",
@@ -14,7 +14,7 @@ const AmenitiesData = [
   {
     id: 2,
     title: `Kitchen`,
-    img: `/AmenitiesIcons/Kitchen.png`,
+    img: `/AmenitiesIcons/Kitchen.webp`,
     list: [
       "Full stove, Refrigerator",
       "Microwave",
@@ -26,7 +26,7 @@ const AmenitiesData = [
   {
     id: 3,
     title: `Bedroom`,
-    img: `/AmenitiesIcons/Bedroom.png`,
+    img: `/AmenitiesIcons/Bedroom.webp`,
     list: [
       "King size beds",
       "Queen size beds",
@@ -37,7 +37,7 @@ const AmenitiesData = [
   {
     id: 4,
     title: `Bathroom`,
-    img: `/AmenitiesIcons/Bathroom.png`,
+    img: `/AmenitiesIcons/Bathroom.webp`,
     list: [
       "Attached bathrooms",
       "Toilet",
@@ -49,7 +49,7 @@ const AmenitiesData = [
   {
     id: 5,
     title: `Additional Amenities`,
-    img: `/AmenitiesIcons/Additional.png`,
+    img: `/AmenitiesIcons/Additional.webp`,
     list: [
       "Cable television, DVD player",
       "Telephone",
@@ -61,7 +61,7 @@ const AmenitiesData = [
   {
     id: 6,
     title: `Community Amenities`,
-    img: `/AmenitiesIcons/Communities.png`,
+    img: `/AmenitiesIcons/Communities.webp`,
     list: [
       "Fitness Centre",
       "Modern Waterfall Garden",

@@ -21,10 +21,10 @@ export const Footer = (props) => {
             </div>
           </div>
           <p>
-            Nestled in Kathmandu, Aloha Residence combines luxury, comfort, and
-            prime locations to provide an unmatched living experience. Discover
-            vibrant city living with us at Aloha Residence, your new home away
-            from home.
+            Nestled in Kathmandu Valley, Aloha Residence combines luxury,
+            comfort, and prime locations to provide an unmatched living
+            experience. Discover vibrant city living with us at Aloha Residence,
+            your new home away from home.
           </p>
         </div>
 
@@ -78,7 +78,10 @@ export const Footer = (props) => {
             </div>
             <div className={FooterCSS["F-contact"]}>
               <i className={`${FooterCSS.icon} fas fa-at`}></i>Email:{" "}
-              <a href="mailto:info@aloharesidence.net">
+              <a
+                className={FooterCSS["F-contact-email"]}
+                href="mailto:info@aloharesidence.net"
+              >
                 info@aloharesidence.net
               </a>
             </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import AboutUsCSS from "./aboutUs.module.css";
 import Heading from "../../components/Heading/Heading";
-import AboutUsPic from "../../assets/Images/AboutUsPic.webp";
 import { Helmet } from "react-helmet-async";
 const AboutUs = () => {
   const appUrl = import.meta.env.VITE_APP_WEB_URL;
@@ -38,14 +37,31 @@ const AboutUs = () => {
           </h2>
           <p className={AboutUsCSS["AU-para"]}>
             Discover the luxury of space, comfort, and prime location at Aloha
-            Residence in Kathmandu. Far exceeding the confines of standard hotel
-            rooms, our two- and three-bedroom apartments are designed with fully
-            equipped kitchens and separate living and dining areas. Nestled in
-            the city's most coveted locales, Aloha Residence is more than just
-            an apartment—it's your home away from home.
+            Residence in Kathmandu Valley. Far exceeding the confines of
+            standard hotel rooms, our two- and three-bedroom apartments are
+            designed with fully equipped kitchens and separate living and dining
+            areas. Nestled in the city's most coveted locales, Aloha Residence
+            is more than just an apartment—it's your home away from home.
           </p>
         </div>
-        <img className={AboutUsCSS["AU-img"]} src={AboutUsPic} />
+        <figure>
+          <picture>
+            <source
+              media="(max-width: 549px)"
+              srcSet="/AboutUsPic/AboutUs-mobile.webp"
+            />
+            <source
+              media="(max-width: 769px)"
+              srcSet="/AboutUsPic/AboutUs-tablet.webp"
+            />
+            <source srcSet="/AboutUsPic/AboutUs-desktop.webp" />
+            <img
+              className={AboutUsCSS["AU-img"]}
+              src="/AboutUsPic/AboutUs-desktop.webp" // Fallback image source for browsers that don't support srcset
+              alt="About Us"
+            />
+          </picture>
+        </figure>
         <div>
           <p className={AboutUsCSS["AU-para-detail"]}>
             Here, hospitality is not just a service, it's our mission. We strive

@@ -205,6 +205,17 @@
   color: #6dcef5;
 }
 
+.F-contact-email {
+  all: unset;
+  color: #f79e29;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.F-contact-email:hover {
+  color: #f5b01b;
+}
+
 @media (max-width: 1400px) {
   :root {
     /* Margin/Padding setting */
@@ -439,6 +450,8 @@
 
   }
 
+
+
   .footer-companyName-container {
     /* Display & Box Model */
     margin-bottom: 5px;
@@ -471,4 +484,10 @@
 
   }
 
+  .F-contact {
+    display: flex;
+    gap: 2px;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }

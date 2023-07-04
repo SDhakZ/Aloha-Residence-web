@@ -43,9 +43,18 @@ export const Offerings = () => {
           data-aos-offset="300"
           className={OfferingsCSS["OH-fig-container"]}
         >
-          <img
-            src={windowWidth <= 560 ? "/OfferingsMobile.png" : "/Offerings.png"}
-          />
+          <picture>
+            <source
+              media="(max-width: 568px)"
+              srcSet="/Offerings/Offering-mobile.webp"
+            />
+            <source
+              media="(max-width: 769px)"
+              srcSet="/Offerings/Offering-tablet.webp"
+            />
+            <source srcSet="/Offerings/Offering-desktop.webp" />
+            <img src="/Offerings/Offering-desktop.webp" alt="Offerings" />
+          </picture>
         </figure>
         <p
           data-aos="fade-up"
@@ -60,11 +69,11 @@ export const Offerings = () => {
           offer, click the button below. Welcome to your new home.
         </p>
         <a
-          data-aos="fade-up"
+          data-aos="fade"
           data-aos-delay="200"
           data-aos-offset="50"
           className={OfferingsCSS["OH-anchor"]}
-          href="/about-us"
+          href="/our-offerings"
         >
           View our offerings
         </a>

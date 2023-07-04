@@ -1,9 +1,9 @@
 :root {
     --HR-h1-fs: 4rem;
     --HR-h1-mt: 75px;
-    --HR-apartment-top: 125%;
-    --HR-shape-top: 135%;
-    --HR-apartment-width: 90%;
+    --HR-apartment-top: 87%;
+    --HR-shape-top: 70%;
+    --HR-apartment-width: 100%;
     --HR-container-h: 650px;
 }
 
@@ -58,8 +58,8 @@
     :root {
         --HR-h1-fs: 3rem;
         --HR-h1-mt: 70px;
-        --HR-apartment-top: 110%;
-        --HR-shape-top: 125%;
+        --HR-apartment-top: 70%;
+        --HR-shape-top: 65%;
 
     }
 }
@@ -68,9 +68,9 @@
     :root {
         --HR-h1-fs: 3rem;
         --HR-h1-mt: 70px;
-        --HR-apartment-top: 120%;
-        --HR-shape-top: 130%;
-        --HR-apartment-width: 100%;
+        --HR-apartment-top: 80%;
+        --HR-shape-top: 65%;
+        --HR-apartment-width: 98%;
         --HR-container-h: 500px;
     }
 }
@@ -79,9 +79,8 @@
     :root {
         --HR-h1-fs: 2.7rem;
         --HR-h1-mt: 50px;
-        --HR-apartment-top: 115%;
-        --HR-shape-top: 122%;
-        --HR-apartment-width: 105%;
+        --HR-apartment-top: 75%;
+        --HR-apartment-width: 100%;
         --HR-container-h: 450px;
     }
 }
@@ -90,18 +89,17 @@
     :root {
         --HR-h1-fs: 2.2rem;
         --HR-h1-mt: 40px;
-        --HR-apartment-top: 110%;
-        --HR-shape-top: 110%;
-        --HR-apartment-width: 105%;
+        --HR-apartment-top: 72%;
+        --HR-shape-top: 55%;
+        --HR-apartment-width: 100%;
         --HR-container-h: 390px;
     }
 }
 
 @media all and (max-width: 830px) {
     :root {
-
-        --HR-apartment-top: 95%;
-        --HR-shape-top: 100%;
+        --HR-apartment-top: 60%;
+        --HR-shape-top: 50%;
     }
 }
 
@@ -109,10 +107,9 @@
     :root {
         --HR-h1-fs: 1.9rem;
         --HR-h1-mt: 25px;
-        --HR-apartment-top: 110%;
-        --HR-shape-top: 120%;
-        --HR-apartment-width: 105%;
-        --HR-container-h: 290px;
+        --HR-apartment-top: 67%;
+        --HR-shape-top: 65%;
+        --HR-container-h: 350px;
     }
 }
 
@@ -121,10 +118,10 @@
     :root {
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 25px;
-        --HR-apartment-top: 86%;
-        --HR-shape-top: 95%;
+        --HR-apartment-top: 65%;
+        --HR-shape-top: 55%;
         --HR-apartment-width: 105%;
-        --HR-container-h: 35vh;
+        --HR-container-h: 280px;
     }
 }
 
@@ -132,8 +129,8 @@
     :root {
         --HR-h1-fs: 1.5rem;
         --HR-h1-mt: 20px;
-        --HR-apartment-top: calc(90% + 2px);
-        --HR-shape-top: 95%;
+        --HR-apartment-top: calc(85% - 1px);
+        --HR-shape-top: 65%;
         --HR-apartment-width: 105%;
         --HR-container-h: 230px;
     }
@@ -143,9 +140,9 @@
     :root {
         --HR-h1-fs: 1.3rem;
         --HR-h1-mt: 20px;
-        --HR-apartment-top: 82%;
-        --HR-shape-top: 88%;
-        --HR-apartment-width: 105%;
-        --HR-container-h: 200px;
+        --HR-apartment-top: 75%;
+        --HR-shape-top: 65%;
+        --HR-apartment-width: 100%;
+        --HR-container-h: 190px;
     }
 }

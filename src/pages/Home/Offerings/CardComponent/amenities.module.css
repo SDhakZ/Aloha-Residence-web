@@ -52,9 +52,9 @@
 
 .AMC-card-top h3 {
     font-family: var(--primary-font);
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--AMC-h3-fs);
-    color: #2C2C2C;
+    color: #424242;
     text-align: center;
 }
 
@@ -81,17 +81,17 @@
 
 .AMC-list li {
     list-style-position: outside;
-    list-style-type: "- ";
-    color: #333333;
+    list-style-type: "🔸 ";
+    color: #4b4b4b;
     font-size: var(--AMC-li-fs);
-    margin-left: 1.3rem;
-    font-weight: 500;
+    margin-left: 1.7rem;
+    font-weight: 400;
 }
 
 @media all and (max-width: 1400px) {
     :root {
         --AMC-carContainer-gap: 40px 20px;
-        --AMC-card-w: 250px;
+        --AMC-card-w: 280px;
         --AMC-card-h: 300px;
         --AMC-img-h: 105px;
         --AMC-h3-fs: 1.2rem;
@@ -102,7 +102,7 @@
 
     .AMC-card {
         min-height: var(--AMC-card-h);
-        max-height: 313px;
+        max-height: 333px;
         gap: 15px;
 
     }
@@ -114,7 +114,7 @@
         --AMC-card-w: 270px;
         --AMC-card-h: 300px;
         --AMC-img-h: 120px;
-        --AMC-h3-fs: 1.2rem;
+        --AMC-h3-fs: 1.3rem;
         --AMC-li-fs: 1rem;
     }
 
@@ -164,6 +164,30 @@
         max-height: 335px;
 
         gap: 16px;
+
+    }
+}
+
+@media all and (max-width: 350px) {
+    :root {
+        --AMC-carContainer-gap: 20px 20px;
+        --AMC-card-w: 280px;
+        --AMC-card-h: 200px;
+        --AMC-img-h: 100px;
+        --AMC-h3-fs: 1.2rem;
+        --AMC-li-fs: 1rem;
+    }
+
+    .AMC-card-top {
+        gap: 8px;
+    }
+
+    .AMC-card {
+
+        min-height: var(--AMC-card-h);
+        max-height: 355px;
+
+        gap: 10px;
 
     }
 }

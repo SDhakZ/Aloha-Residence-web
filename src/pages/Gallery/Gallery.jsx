@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css";
 import GoToTop from "../../components/GoToTop/GoToTop";
 import { Helmet } from "react-helmet-async";
+import { IKImage } from "imagekitio-react";
 import {
   CommonAreaGallery,
   RoomGallery,
@@ -81,10 +82,29 @@ const Gallery = () => {
                 interval="5000"
                 emulateTouch
                 infiniteLoop
+                showThumbs
               >
                 {gallery.data.map((item) => (
                   <div key={item.id}>
-                    <img src={item.img} />
+                    <IKImage
+                      lqip={{ active: true, quality: 20 }}
+                      loading="lazy"
+                      transformation={[
+                        {
+                          width: "auto",
+                          aspectRatio: "1:1",
+                          quality: 90,
+                        },
+                        {
+                          width: "auto",
+                          aspectRatio: "16:9",
+                          quality: 90,
+                          transformationPosition: "query",
+                        },
+                      ]}
+                      path={item.img}
+                    />
+                    {/* <img loading="lazy" src={item.img} /> */}
                     <p className="legend">{item.legend}</p>
                   </div>
                 ))}
@@ -92,6 +112,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+
         <GoToTop />
       </div>
     </div>

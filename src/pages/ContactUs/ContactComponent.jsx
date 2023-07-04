@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactUsCSS from "./ContactUs.module.css";
-import grass from "../../assets/images/grass.png";
+
 import Heading from "../../components/Heading/Heading";
 
 export const ContactComponent = ({ onFAQClick, slide }) => {
@@ -156,7 +156,24 @@ export const ContactComponent = ({ onFAQClick, slide }) => {
             </div>
           </div>
         </div>
-        <img src={grass} alt="grass" className={ContactUsCSS["C-grass"]} />
+        <figure className={ContactUsCSS["C-grass"]}>
+          <picture>
+            <source
+              media="(max-width: 480px)"
+              srcSet="/Grass/Grass-Mobile.webp"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcSet="/Grass/Grass-Tablet.webp"
+            />
+            <source srcSet="/Grass/Grass-Desktop.webp" type="image/webp" />
+            <img
+              src="/Grass/Grass-Desktop.webp"
+              alt="grass"
+              className={ContactUsCSS["C-grass"]}
+            />
+          </picture>
+        </figure>
       </div>
     </>
   );
