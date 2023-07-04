@@ -100,7 +100,7 @@ const Gallery = () => {
                 interval="5000"
                 emulateTouch
                 infiniteLoop
-                showThumbs
+                showThumbs={false}
               >
                 {gallery.data.map((item) => (
                   <div key={item.id}>

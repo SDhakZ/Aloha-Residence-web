@@ -39,8 +39,8 @@ export const HomeAboutUs = () => {
         </div>
         <figure
           data-aos="zoom-in"
-          data-aos-delay="200"
-          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-offset="190"
           data-aos-anchor-placement="top-bottom"
           className={HomeAboutUsCSS["HAU-figure"]}
         >

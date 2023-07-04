@@ -31,8 +31,8 @@ export const Offerings = () => {
       <div className={OfferingsCSS["OH-secondary-container"]}>
         <h2
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-offset="300"
+          data-aos-delay="30"
+          data-aos-offset="100"
           className={OfferingsCSS["OH-h2"]}
         >
           What we offer
@@ -40,7 +40,7 @@ export const Offerings = () => {
         <figure
           data-aos="zoom-in"
           data-aos-delay="200"
-          data-aos-offset="300"
+          data-aos-offset="100"
           className={OfferingsCSS["OH-fig-container"]}
         >
           <picture>
@@ -58,7 +58,7 @@ export const Offerings = () => {
         </figure>
         <p
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="20"
           data-aos-offset="50"
           className={OfferingsCSS["OH-para"]}
         >
@@ -70,7 +70,7 @@ export const Offerings = () => {
         </p>
         <a
           data-aos="fade"
-          data-aos-delay="200"
+          data-aos-delay="100"
           data-aos-offset="50"
           className={OfferingsCSS["OH-anchor"]}
           href="/our-offerings"
