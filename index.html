@@ -12,10 +12,15 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Aloha Residence - Luxury Apartments</title>
-    <link rel="preload" as="image" href="/Apartment.webp">
-    <link rel="preload" as="image" href="/Shape.webp">
-    <link rel="prefetch" href="/AboutUsPic.webp">
+    <link rel="preload" as="image" href="/Shape/shape-mobile.webp" media="(max-width: 480px)">
+<link rel="preload" as="image" href="/Shape/shape-tablet.webp" media="(max-width: 769px)">
+<link rel="preload" as="image" href="/Shape/shape-desktop.webp">
+<link rel="preload" as="image" href="/Apartment/apartment-mobile.webp" media="(max-width: 480px)">
+<link rel="preload" as="image" href="/Apartment/apartment-tablet.webp" media="(max-width: 769px)">
+<link rel="preload" as="image" href="/Apartment/apartment-desktop.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="prefetch" href="/AboutUsPic/AboutUs-mobile.webp">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
       <!-- Open Graph Tags -->
@@ -29,5 +34,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
   </body>
 </html>

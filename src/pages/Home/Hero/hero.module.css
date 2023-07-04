@@ -59,7 +59,7 @@
         --HR-h1-fs: 3rem;
         --HR-h1-mt: 70px;
         --HR-apartment-top: 70%;
-        --HR-shape-top: 65%;
+        --HR-shape-top: 55%;
 
     }
 }
@@ -82,6 +82,7 @@
         --HR-apartment-top: 75%;
         --HR-apartment-width: 100%;
         --HR-container-h: 450px;
+        --HR-shape-top: 58%;
     }
 }
 
@@ -108,7 +109,7 @@
         --HR-h1-fs: 1.9rem;
         --HR-h1-mt: 25px;
         --HR-apartment-top: 67%;
-        --HR-shape-top: 65%;
+        --HR-shape-top: 60%;
         --HR-container-h: 350px;
     }
 }

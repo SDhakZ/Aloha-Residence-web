@@ -1,7 +1,6 @@
 import React from "react";
 import GalleryCSS from "./gallery.module.css";
 import Heading from "../../components/Heading/Heading";
-import GalleryPic from "../../assets/images/GalleryPic.webp";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css";
@@ -69,7 +68,26 @@ const Gallery = () => {
             our extensive gallery
           </h2>
         </div>
-        <img className={GalleryCSS["GA-img"]} src={GalleryPic} />
+        <figure>
+          <picture>
+            <source
+              media="(max-width: 480px)"
+              srcSet="/Gallery/Gallery-Mobile.webp"
+            />
+            <source
+              media="(max-width: 769px)"
+              srcSet="/Gallery/Gallery-Tablet.webp"
+            />
+            <source srcSet="/Gallery/Gallery-Desktop.webp" />
+            <img
+              className={GalleryCSS["GA-img"]}
+              loading="eager"
+              alt="Gallery"
+              src="/Gallery/Gallery-Desktop.webp" // Fallback image source for browsers that don't support srcset
+            />
+          </picture>
+        </figure>
+
         <div className={GalleryCSS["GA-photo-gallery"]}>
           {galleries.map((gallery, index) => (
             <div className={GalleryCSS["GA-carousel"]} key={index}>
