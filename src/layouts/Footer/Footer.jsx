@@ -15,6 +15,7 @@ export const Footer = (props) => {
               className={FooterCSS["footer-companyLogo"]}
               src="/logo.png"
               alt="company logo"
+              title="company logo"
             />
             <div className={FooterCSS["footer-companyName"]}>
               Aloha Residence
@@ -35,27 +36,41 @@ export const Footer = (props) => {
           <div className={`${FooterCSS["footer-page"]}`}>
             <ul className={FooterCSS["footer-ul"]}>
               <li>
-                <a href="/">Home</a>
+                <a title="Home page" href="/">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="/gallery">Gallery</a>
+                <a title="Gallery page" href="/gallery">
+                  Gallery
+                </a>
               </li>
               <li>
-                <a href="/layouts">Layouts</a>
+                <a title="Layouts page" href="/layouts">
+                  Layouts
+                </a>
               </li>{" "}
               <li>
-                <a href="/our-offerings">Our Offerings</a>
+                <a title="Our Offering page" href="/our-offerings">
+                  Our Offerings
+                </a>
               </li>
             </ul>
             <ul className={FooterCSS["footer-ul"]}>
               <li>
-                <a href="/about-us">About Us</a>
+                <a title="About us page" href="/about-us">
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="/contact-us">Contact Us</a>
+                <a title="Contact page" href="/contact-us">
+                  Contact Us
+                </a>
               </li>
               <li>
-                <a href="/faq">FAQ's</a>
+                <a title="FAQ page" href="/faq">
+                  FAQ's
+                </a>
               </li>
             </ul>
           </div>
@@ -79,6 +94,7 @@ export const Footer = (props) => {
             <div className={FooterCSS["F-contact"]}>
               <i className={`${FooterCSS.icon} fas fa-at`}></i>Email:{" "}
               <a
+                title="Email us"
                 className={FooterCSS["F-contact-email"]}
                 href="mailto:info@aloharesidence.net"
               >

@@ -48,18 +48,33 @@ const Layouts = () => {
           <div className={LayoutsCSS["L-section-AB"]}>
             <h3 className={LayoutsCSS["L-h3"]}>Type A</h3>
             <p className={LayoutsCSS["L-p"]}>2 bedroom apartment</p>
-            <img className={LayoutsCSS["L-img-A"]} src={TypeA} />
+            <img
+              className={LayoutsCSS["L-img-A"]}
+              alt="Type A Layout"
+              src={TypeA}
+              title="Type A Layout Apartment"
+            />
           </div>
           <div className={LayoutsCSS["L-section-AB"]}>
             <h3 className={LayoutsCSS["L-h3"]}>Type B</h3>
             <p className={LayoutsCSS["L-p"]}>2 bedroom apartment</p>
-            <img className={LayoutsCSS["L-img-B"]} src={TypeB} />
+            <img
+              alt="Type B Layout"
+              className={LayoutsCSS["L-img-B"]}
+              src={TypeB}
+              title="Type B Layout Apartment"
+            />
           </div>
         </div>
         <div className={LayoutsCSS["L-section-AB"]}>
           <h3 className={LayoutsCSS["L-h3"]}>Type C</h3>
           <p className={LayoutsCSS["L-p"]}>3 bedroom apartment</p>
-          <img className={LayoutsCSS["L-img-C"]} src={TypeC} />
+          <img
+            alt="Type C Layout"
+            className={LayoutsCSS["L-img-C"]}
+            src={TypeC}
+            title="Type C Layout Apartment"
+          />
         </div>
         <div className={LayoutsCSS["L-section-AB"]}>
           {" "}
@@ -67,7 +82,12 @@ const Layouts = () => {
           <p className={LayoutsCSS["L-p"]}>
             Inter-connected double flat 4 bed room apartment
           </p>
-          <img className={LayoutsCSS["L-img-D"]} src={TypeD} />
+          <img
+            alt="Type D Layout"
+            className={LayoutsCSS["L-img-D"]}
+            src={TypeD}
+            title="Type D Layout Apartment"
+          />
         </div>
       </div>
       <GoToTop />

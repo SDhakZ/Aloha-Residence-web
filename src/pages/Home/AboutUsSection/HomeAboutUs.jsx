@@ -58,6 +58,7 @@ export const HomeAboutUs = () => {
               className={HomeAboutUsCSS["HAU-img"]}
               src="/AboutUsPic/AboutUs-desktop.webp" // Fallback image source for browsers that don't support srcset
               alt="About Us"
+              title="Apartment full view"
             />
           </picture>
         </figure>

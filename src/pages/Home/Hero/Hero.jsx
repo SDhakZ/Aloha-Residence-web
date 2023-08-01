@@ -52,6 +52,7 @@ export const Hero = () => {
               }}
               loading="eager"
               alt="Apartment"
+              title="Apartment"
             />
           </picture>
         </figure>
@@ -70,6 +71,7 @@ export const Hero = () => {
               loading="eager"
               alt="shape"
               src="/Shape/shape-desktop.webp" // Fallback image source for browsers that don't support srcset
+              title="Apartment illustrated shape"
             />
           </picture>
         </figure>

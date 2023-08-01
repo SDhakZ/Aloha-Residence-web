@@ -73,6 +73,7 @@ export const ContactComponent = ({ onFAQClick, slide }) => {
                 <li>
                   <i className={`${ContactUsCSS.icon} fas fa-at`}></i> E-mail:{" "}
                   <a
+                    title="Email us"
                     className={ContactUsCSS["C-email"]}
                     style={{ color: "white" }}
                     href="mailto:info@aloharesidence.net"
@@ -171,6 +172,7 @@ export const ContactComponent = ({ onFAQClick, slide }) => {
               src="/Grass/Grass-Desktop.webp"
               alt="grass"
               className={ContactUsCSS["C-grass"]}
+              title="grass"
             />
           </picture>
         </figure>

@@ -49,7 +49,12 @@ const Navbarmenu = () => {
                 onClick={toggleClass}
                 to={`/`}
               >
-                <img src="/logo.png" className={NavbarCSS["nav-logo2"]} />
+                <img
+                  src="/logo.png"
+                  alt="logo"
+                  title="Apartment Logo"
+                  className={NavbarCSS["nav-logo2"]}
+                />
               </NavLink>
               {/* Responsive Menu Button */}
               {isResponsiveclose === true ? (
@@ -119,7 +124,12 @@ const Navbarmenu = () => {
                     onClick={toggleClass}
                     to={`/`}
                   >
-                    <img className={NavbarCSS["nav-logo"]} src="/logo.png" />
+                    <img
+                      alt="Logo"
+                      className={NavbarCSS["nav-logo"]}
+                      src="/logo.png"
+                      title="Apartment Logo"
+                    />
                   </NavLink>
                 </li>
 

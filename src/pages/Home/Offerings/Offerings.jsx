@@ -53,7 +53,11 @@ export const Offerings = () => {
               srcSet="/Offerings/Offering-tablet.webp"
             />
             <source srcSet="/Offerings/Offering-desktop.webp" />
-            <img src="/Offerings/Offering-desktop.webp" alt="Offerings" />
+            <img
+              title="Apartment offering icons"
+              src="/Offerings/Offering-desktop.webp"
+              alt="Offerings"
+            />
           </picture>
         </figure>
         <p

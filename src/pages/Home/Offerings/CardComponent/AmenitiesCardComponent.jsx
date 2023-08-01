@@ -11,6 +11,7 @@ const AmenitiesCardComponent = (props) => {
             className={AmenitiesCSS["AMC-card-img"]}
             src={props.img}
             alt={props.title}
+            title={`${props.title} icon`}
           />
         </figure>
       </div>

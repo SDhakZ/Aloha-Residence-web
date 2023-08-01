@@ -20,7 +20,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
-          content="Aloha Residence, Aloha Inn, Apartment, Home, Luxury Living, Amenities, Nepal Apartment, Kathmandu Apartments"
+          content="Aloha Residence, Aloha apartment, aloha residence, apartments in nepal, Aloha Inn, Apartment, Home, Luxury Living, Amenities, Nepal Apartment, Kathmandu Apartments"
         />
         <meta
           property="og:title"
@@ -33,6 +33,7 @@ const Home = () => {
         <meta property="og:image" content={`${appUrl}/OGImages/LogoOG.png`} />
         <meta property="og:url" content={`${appUrl}/`} />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" href={`${appUrl}/favicon.ico`} />
         <link rel="canonical" href={`${appUrl}/`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>

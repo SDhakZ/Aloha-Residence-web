@@ -83,6 +83,7 @@ const Gallery = () => {
               className={GalleryCSS["GA-img"]}
               loading="eager"
               alt="Gallery"
+              title="Apartment Gallary"
               src="/Gallery/Gallery-Desktop.webp" // Fallback image source for browsers that don't support srcset
             />
           </picture>

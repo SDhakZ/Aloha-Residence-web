@@ -48,6 +48,7 @@ const Features = () => {
                 <img
                   className={`${FeaturesCSS["OF-feature-img"]} ${FeaturesCSS["OF-living"]}`}
                   src={StylishLivingImg}
+                  alt="Stylish Living Illustration"
                 />
               </figure>
             </div>
@@ -63,6 +64,7 @@ const Features = () => {
                 <img
                   className={`${FeaturesCSS["OF-feature-img"]} ${FeaturesCSS["OF-security"]}`}
                   src={SecurityImg}
+                  alt="Security Illustration"
                 />
               </figure>
               <div className={FeaturesCSS["OF-feature-detail"]}>
@@ -96,6 +98,7 @@ const Features = () => {
                 <img
                   className={`${FeaturesCSS["OF-feature-img"]} ${FeaturesCSS["OF-reliable"]}`}
                   src={ReliableServiceImg}
+                  alt="Reliable Service Illustration"
                 />
               </figure>
             </div>
